@@ -1,0 +1,8 @@
+{
+  "name": "edit-shopping-list-entry",
+  "version": "1.0.0",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "uuid": "^13.0.0"
+  }
+}

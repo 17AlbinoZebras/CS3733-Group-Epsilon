@@ -1,0 +1,419 @@
+/* --- Base Layout --- */
+.pageContainer {
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1f2937;
+}
+
+/* --- Hero Section (The Pink Banner) --- */
+.heroSection {
+    background-color: #fce7f3;
+    /* Light pink background */
+    padding: 4rem 10%;
+    /* Spacing for the content inside */
+    padding-bottom: 8rem;
+    /* Extra padding at bottom to allow for the card overlap */
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.avatarContainer {
+    flex-shrink: 0;
+}
+
+/* The black silhouette avatar */
+.avatar {
+    width: 140px;
+    height: 140px;
+    background-color: #000000;
+    border-radius: 20px;
+    /* Rounded square look from screenshot */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatarSvg {
+    width: 80%;
+    height: 80%;
+    color: white;
+    /* Silhouette color */
+}
+
+.heroText h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 0.5rem 0;
+}
+
+.heroText p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* --- Main Content (Sidebar + Card) --- */
+.contentWrapper {
+    max-width: 1500px;
+    padding: 0 2rem;
+
+    /* THE MAGIC: Pulls this section UP over the pink banner */
+    margin-top: -5rem;
+
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    /* Ensures sidebar doesn't stretch */
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 300px;
+    margin-left: 5rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 7rem;
+}
+
+.sidebarButton {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #374151;
+    transition: all 0.2s;
+}
+
+/* The active state (Pink button) */
+.activeTab {
+    background-color: #f43f5e;
+    /* Rose-500 */
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(244, 63, 94, 0.4);
+}
+
+.sidebarButton:hover:not(.activeTab) {
+    background-color: #f3f4f6;
+}
+
+/* --- Content Card --- */
+.card {
+    flex: 1;
+    background-color: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    min-height: 400px;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+/* --- Form Rows --- */
+.infoRow {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.infoRow:first-of-type {
+    border-top: 1px solid #e5e7eb;
+}
+
+.infoLabel {
+    width: 30%;
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+.infoValue {
+    font-weight: 500;
+    color: #111827;
+}
+
+.actionLink {
+    color: #2563eb;
+    /* Blue-600 */
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.actionLink:hover {
+    text-decoration: underline;
+}
+
+/* --- Danger Zone --- */
+.dangerZoneTitle {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.deleteButton {
+    background-color: white;
+    border: 1px solid #ef4444;
+    /* Red border */
+    color: #ef4444;
+    /* Red text */
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+}
+
+.deleteButton:hover {
+    background-color: #fef2f2;
+}
+
+.dangerDescription {
+    font-size: 0.85rem;
+    color: #ef4444;
+    /* Red text */
+    line-height: 1.5;
+}
+
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 32rem;
+    width: 100%;
+}
+
+.modalTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.formLabel {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.formInput {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding-right: 40px;
+    /* Space for the eye icon */
+}
+
+.formInput:focus {
+    outline: none;
+    border-color: #f43f5e;
+    box-shadow: 0 0 0 2px #fecdd3;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cancelButton {
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: #f43f5e;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submitButton:disabled {
+    background-color: #fda4af;
+    cursor: not-allowed;
+}
+
+.errorMessage {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.eyeButton {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.eyeButton:hover {
+    color: #374151;
+}
+
+
+/* --- Period Buttons Container --- */
+.periodButtons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Individual Period Button --- */
+.periodButton {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    /* Light gray border */
+    background-color: #ffffff;
+    color: #374151;
+    /* Text gray */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.periodButton:hover {
+    background-color: #f3f4f6;
+    /* Light hover */
+}
+
+/* --- Active Period Button --- */
+.activePeriod {
+    background-color: #f43f5e;
+    /* Pink / Rose-500 */
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(244, 63, 94, 0.4);
+}
+
+
+
+
+/* Container for the activity list */
+.activityList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each activity row */
+.activityItem {
+    display: flex;
+    justify-content: space-between;
+    /* Period on left, total on right */
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+.activityItem:last-child {
+    border-bottom: none;
+}
+
+/* Optional: bold period label */
+.activityPeriod {
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Optional: highlight total amount */
+.activityTotal {
+    font-weight: 500;
+    color: #000000;
+}
+
+.periodButtons {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.periodButton {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #f43f5e;
+    border-radius: 8px;
+    background-color: white;
+    color: #f43f5e;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.periodButton:hover {
+    background-color: #fef2f2;
+}
+
+.activePeriodButton {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #f43f5e;
+    border-radius: 8px;
+    background-color: #f43f5e;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}

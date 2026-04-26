@@ -1,0 +1,493 @@
+/* --- Base Page Styles --- */
+.pageContainer {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    /* Light gray background */
+    padding: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937;
+}
+
+.contentWrapper {
+    max-width: 64rem;
+    /* 1024px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    /* 36px */
+    font-weight: 700;
+}
+
+.actionsContainer {
+    display: flex;
+    gap: 0.75rem;
+    /* 12px */
+}
+
+/* Base button style */
+.button {
+    padding: 0.5rem 1rem;
+    /* py-2 px-4 */
+    border: none;
+    border-radius: 8px;
+    /* rounded-lg */
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.addChainButton {
+    background-color: #ec4899;
+    /* pink-500 */
+    color: white;
+}
+
+.addStoreButton {
+    background-color: #f87171;
+    /* red-400 */
+    color: white;
+}
+
+/* --- Chain Card List Container --- */
+.receiptItemListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* --- Receipt Item Card --- */
+.receiptItemCard {
+    background-color: #ffffff;
+    border-radius: 12px;
+    /* rounded-xl */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.receiptItemCard:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.cardHeaderLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.logoPlaceholder {
+    width: 2rem;
+    /* w-8 */
+    height: 2rem;
+    /* h-8 */
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    /* gray-200 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.receiptItemName {
+    font-size: 1.125rem;
+    /* text-lg */
+    font-weight: 600;
+    color: #111827;
+}
+
+.chainUrl {
+    margin-left: 0.75rem;
+    font-size: 0.875rem;
+    color: #3b82f6;
+    /* blue-500 */
+    text-decoration: none;
+}
+
+.chainSales {
+    width: 150px;
+    text-align: right;
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #111827;
+    font-size: 1.25rem;
+    margin-right: 4rem;
+}
+
+.chainUrl:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #374151;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.storeList {
+    background-color: #f9fafb;
+    /* gray-50 */
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.storeListTitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.storeItem {
+    font-size: 0.875rem;
+    color: #374151;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.storeCity {
+    font-weight: 600;
+    width: 6rem;
+    /* w-24 */
+}
+
+.storeAddress {
+    color: #1f2937;
+}
+
+.noStoresText {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+}
+
+.formInputGroup {
+    display: block;
+}
+
+.formLabel {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.requiredStar {
+    color: #ef4444;
+    /* red-500 */
+}
+
+.formInput {
+    width: 70%;
+    height: 20%;
+    margin-top: 2rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.formInput:focus {
+    outline: none;
+    border-color: #ec4899;
+    box-shadow: 0 0 0 2px #fbcfe8;
+}
+
+/* --- Modal --- */
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.5);
+    /* gray-900 opacity-50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modalContent {
+    background-color: #fef2f2;
+    /* red-50, like your wireframe */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 32rem;
+    /* max-w-lg */
+    width: 100%;
+    border: 1px solid #fecaca;
+    /* red-200 */
+}
+
+.modalTitle {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.modalFormGroup {
+    margin-bottom: 1.5rem;
+}
+
+.modalFormLabel {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.modalRequiredStar {
+    color: #ef4444;
+    /* red-500 */
+}
+
+.modalFormInput {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 6px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.modalFormInput:focus {
+    outline: none;
+    border-color: #ec4899;
+    box-shadow: 0 0 0 2px #fbcfe8;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.modalCancelButton {
+    background-color: #d1d5db;
+    /* gray-300 */
+    color: #1f2937;
+}
+
+.modalCancelButton:hover {
+    background-color: #9ca3af;
+}
+
+.modalSubmitButton {
+    background-color: #ec4899;
+    /* pink-500 */
+    color: white;
+}
+
+.modalSubmitButton:disabled {
+    background-color: #fbcfe8;
+    /* pink-200 */
+    cursor: not-allowed;
+}
+
+/* --- Loading --- */
+.loadingText {
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.cancelButton {
+    background-color: #d1d5db;
+    /* gray-300 */
+    color: #1f2937;
+}
+
+.cancelButton:hover {
+    background-color: #9ca3af;
+}
+
+.submitButton {
+    background-color: #ec4899;
+    /* pink-500 */
+    color: white;
+}
+
+.submitButton:disabled {
+    background-color: #fbcfe8;
+    /* pink-200 */
+    cursor: not-allowed;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    margin-top: 1.5rem; /* optional spacing above */
+}
+
+
+.receiptItemDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937; /* gray-800 */
+}
+
+.itemName {
+    font-weight: 600;
+}
+
+.itemCategory {
+    font-style: italic;
+    color: #4b5563; /* gray-600 */
+}
+
+.itemQuantity {
+    font-weight: 500;
+    color: #111827; /* gray-900 */
+}
+
+.itemPrice {
+    font-weight: 700;
+    color: #111827; /* gray-900 */
+}
+
+.iconButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    color: #374151;
+    margin-left: 0.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.iconButton:hover {
+    color: #ec4899;
+}
+
+.editFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9fafb; /* gray-50 */
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.editFormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.editFormLabel {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.editFormInput {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.editFormInput:focus {
+    outline: none;
+    border-color: #ec4899;
+    box-shadow: 0 0 0 2px #fbcfe8;
+}
+
+.editFormActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.updateItemButton {
+    background-color: #3b82f6; /* blue-500 */
+    color: white;
+}
+
+.updateItemButton:hover {
+    opacity: 0.9;
+}
+
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the dropdown and label */
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.selectLabel {
+    align-self: center;
+    font-size: 1.5rem; /* slightly larger */
+    font-weight: 700; /* bolder */
+    color: #111827; /* darker, more prominent */
+    margin-bottom: 0.35rem; /* small spacing from dropdown */
+}
+
+.selectInput {
+    width: 80%; /* adjust to taste */
+    font-size: 1.3rem; /* slightly larger text */
+    font-weight: 300; /* more prominent text */
+    color: #1f2937; /* darker gray for readability */
+    padding: 0.55rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    text-align: center; /* keeps selected option text centered */
+}
+
+.selectInput:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+    color: #6b7280; /* slightly faded for disabled state */
+}

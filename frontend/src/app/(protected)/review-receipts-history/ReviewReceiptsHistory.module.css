@@ -1,0 +1,188 @@
+/* --- Base Page Styles --- */
+.pageContainer {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+}
+
+.contentWrapper {
+  max-width: 64rem; /* 1024px */
+  margin: 0 auto;
+}
+
+/* --- Header Section --- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.createButton {
+  background-color: #f43f5e; /* Rose-500 */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: #e11d48;
+}
+
+/* --- Receipt Card --- */
+.receiptCard {
+  background-color: white;
+  border: 1px solid #1f2937; /* Dark border like screenshot */
+  border-radius: 20px; /* Rounded corners */
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* --- Header Columns --- */
+.colStore {
+  flex: 2; /* Takes up more space */
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.colDate {
+  flex: 1.5;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.colToggle {
+  flex: 1.5;
+  color: #3b82f6; /* Blue link color */
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.colToggle:hover {
+  text-decoration: underline;
+}
+
+.colPrice {
+  width: 100px; /* Fixed width for alignment */
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000000;
+  margin-right: 2rem; /* Space before icon */
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #000000;
+}
+
+/* --- Expanded Content (Item Table) --- */
+.expandedContent {
+  padding: 0 2rem 2rem 2rem;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.itemsTable {
+  width: 100%;
+  border-top: 2px solid #000000; /* Thick divider */
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+/* Table Header */
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Item Row */
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.itemName {
+  flex: 1.5;
+}
+
+.itemCategory {
+  flex: 1;
+  color: #6b7280; /* Optional: Gray color to distinguish it */
+  font-size: 0.95rem;
+}
+
+.itemQty {
+  flex: 0.5;
+  text-align: center;
+}
+
+.itemPrice {
+  flex: 0.5;
+  text-align: right;
+}
+
+/* Total Row */
+.totalRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #000000;
+  font-size: 1.1rem;
+  gap: 2rem;
+}
+
+.totalLabel {
+  font-weight: 700;
+}
+
+.totalValue {
+  font-weight: 600;
+  width: 100px; /* Matches colPrice width */
+  text-align: right;
+}
+
+.loadingText {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 4rem;
+  font-size: 1.1rem;
+}

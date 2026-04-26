@@ -1,0 +1,9 @@
+{
+  "name": "review-history",
+  "version": "1.0.0",
+  "description": "review receipts history for each shopper",
+  "main": "review-history.mjs",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+} 

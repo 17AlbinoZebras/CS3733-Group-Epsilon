@@ -1,0 +1,9 @@
+{
+  "name": "add-chain",
+  "version": "1.0.0",
+  "description": "Lambda function to add chains to the database",
+  "main": "add-chain.mjs",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+} 

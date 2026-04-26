@@ -1,0 +1,74 @@
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb; 
+  z-index: 40;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* These rules align the nav content with your .contentWrapper */
+  max-width: 64rem; /* 1024px */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* This padding ensures alignment on very wide screens or when window is narrow */
+  padding: 0 2.5rem; 
+}
+
+.appName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ec4899; /* Pink accent */
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.disabledLink {
+  text-decoration: none;
+  color: #9ca3af; /* Gray color for disabled links */
+  font-weight: 500;
+  cursor:default;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #374151; /* Dark gray */
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.navLink:hover, .navLink.active {
+  color: #f87171; /* Red accent */
+  font-weight: 600;
+}
+
+.logoutButton {
+  background-color: #fca5a5; /* Light red */
+  color: #991b1b; /* Dark red text */
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #f87171; 
+  color: white;
+}

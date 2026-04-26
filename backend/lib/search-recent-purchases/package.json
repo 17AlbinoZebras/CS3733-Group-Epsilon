@@ -1,0 +1,9 @@
+{
+  "name": "search-recent-purchases",
+  "version": "1.0.0",
+  "description": "search recent purchases for a shopper",
+  "main": "search-recent-purchases.mjs",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+} 

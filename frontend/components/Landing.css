@@ -1,0 +1,236 @@
+/* --- Your Provided Navbar CSS --- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb; 
+  z-index: 40;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* These rules align the nav content with your .contentWrapper */
+  max-width: 64rem; /* 1024px */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* This padding ensures alignment on very wide screens or when window is narrow */
+  padding: 0 2.5rem; 
+}
+
+.appName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ec4899; /* Pink accent */
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.disabledLink {
+  text-decoration: none;
+  color: #9ca3af; /* Gray color for disabled links */
+  font-weight: 500;
+  cursor:default;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #374151; /* Dark gray */
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  font-family: inherit; /* Ensure buttons inherit font */
+}
+
+.navLink:hover, .navLink.active {
+  color: #f87171; /* Red accent */
+  font-weight: 600;
+}
+
+.logoutButton {
+  background-color: #fca5a5; /* Light red */
+  color: #991b1b; /* Dark red text */
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #f87171; 
+  color: white;
+}
+
+/* --- End Provided Navbar CSS --- */
+
+
+/* --- Landing Page Specific Styles --- */
+
+/* General Reset/Defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #374151; /* Matching nav dark gray */
+  line-height: 1.6;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Reusable Content Wrapper to match Navbar alignment */
+.contentWrapper {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2.5rem;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  /* Updated gradient to match Pink/Red theme slightly better */
+  background: linear-gradient(135deg, #fff1f2 0%, #fff 100%);
+  padding: 5rem 0;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937; /* Very dark gray */
+  line-height: 1.2;
+}
+
+.hero-subtext {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #4b5563;
+}
+
+/* CTA Button */
+.cta-button {
+  /* Updated to match appName Pink (#ec4899) */
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #db2777; /* Slightly darker pink */
+  transform: translateY(-2px);
+}
+
+/* Status Messages */
+.status-message {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.status-message.warning {
+  background-color: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #ffedd5;
+}
+
+.status-message.error {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fee2e2;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-color: #fbcfe8; /* Light pink border on hover */
+}
+
+.feature-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.feature-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff1f2;
+  color: #991b1b;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .navContent, .contentWrapper {
+    padding: 0 1.5rem;
+  }
+}
