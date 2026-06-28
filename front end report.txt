@@ -1,0 +1,2136 @@
+commit 1ba4a91f952ae67ce6e42cbb5b8edccf50772e28
+Author: codeitfast 
+Date:   Fri Dec 12 13:21:01 2025 -0500
+
+    bug fix: UI alteration
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 1570 +++++++++++----------
+ 1 file changed, 786 insertions(+), 784 deletions(-)
+
+commit 6749b10bc2e62f3b23992fb09f7f83f6beba8a4b
+Merge: 8dda185 787e5be
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Fri Dec 12 12:01:49 2025 -0500
+
+    Merge pull request #42 from bnbinder/update-landing-page
+    
+    Change landing page to be more accurate
+
+commit 787e5be93e25a344c77eeffef5c210dfafcfce70
+Author: 17AlbinoZebras 
+Date:   Fri Dec 12 12:01:20 2025 -0500
+
+    Change landing page to be more accurate
+
+ shopcomp/components/LandingPage.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8dda185b8681f2dd512da90502cd67a81705c596
+Author: bnbinder 
+Date:   Fri Dec 12 11:37:10 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+
+commit e229d159b5f2b8bfd02f3bd1194b5dbd9eebc12e
+Author: codeitfast 
+Date:   Fri Dec 12 11:21:12 2025 -0500
+
+    bug: misimport, now can build.
+
+ shopcomp/src/app/api/shopper/create-shopping-list.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 785d89fe9c92cd75c172a49c85c8f53bc82fd442
+Merge: 144a340 89553ab
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Fri Dec 12 11:18:16 2025 -0500
+
+    Merge pull request #40 from bnbinder/css-shopping-list-ben
+    
+    fix: text font
+
+commit 89553ab700d804a5ae991400749d0616b6e40ae7
+Author: codeitfast 
+Date:   Fri Dec 12 11:18:07 2025 -0500
+
+    Navbar name changed
+
+ shopcomp/components/Navbar.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 144a340c6d978c963659e36b12563ebf50f72caf
+Merge: eae193e 3bcea0c
+Author: bnbinder 
+Date:   Fri Dec 12 11:17:40 2025 -0500
+
+    Merge pull request #41 from bnbinder/activites-patch
+    
+    Activites patch
+
+commit 3bcea0c7968b34da566f4e3f30350e01f8d46b95
+Merge: f87d90d eae193e
+Author: codeitfast 
+Date:   Fri Dec 12 11:14:39 2025 -0500
+
+    Merge branch 'development' into activites-patch
+
+commit f87d90df33a7372944f8e93b73e340836be93047
+Author: codeitfast 
+Date:   Fri Dec 12 11:14:24 2025 -0500
+
+    bug: activies now are formatted properly
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 148 ++++++++++++++++++---
+ 1 file changed, 129 insertions(+), 19 deletions(-)
+
+commit eae193ea8fc5bc35560ad5bb039a590704b76015
+Author: bnbinder 
+Date:   Fri Dec 12 11:08:04 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 1797a4d643b6c346e8ad1cb4d5948ceb2b5de153
+Author: bnbinder 
+Date:   Fri Dec 12 11:02:59 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit f77eec95f5afc1dd6303a71db7c57a8a816c22e7
+Author: bnbinder 
+Date:   Thu Dec 11 19:28:07 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bca12e99f3adf89ff0f0e9a723b74cd0bb575e7d
+Author: bnbinder 
+Date:   Thu Dec 11 19:26:26 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 56ba85a04c6e1fb51dc0cb9ff66ed2c8e5ae6fd1
+Author: bnbinder 
+Date:   Thu Dec 11 19:25:55 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4d102f96ac66416aaf51b311db6d571d91008efc
+Author: bnbinder 
+Date:   Thu Dec 11 19:25:40 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit fbd7fd4eccb5afc37d60d58bfa67d6accdf76fbd
+Author: bnbinder 
+Date:   Thu Dec 11 19:22:23 2025 -0500
+
+    fix; typescript is not fun
+    
+    didnt tell me this didnt exist.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5177807e243acbb73e6937309442291cd8054207
+Author: bnbinder 
+Date:   Thu Dec 11 19:10:58 2025 -0500
+
+    fix: text font
+
+ .../src/app/(protected)/chains-and-stores/ChainsAndStores.module.css    | 2 +-
+ shopcomp/src/app/(protected)/receipt-add/ReceiptAdd.module.css          | 2 +-
+ shopcomp/src/app/(protected)/shopping-list/ShoppingList.module.css      | 2 +-
+ .../app/(protected)/shopping-list/edit/[id]/EditShoppingList.module.css | 2 +-
+ .../shopping-list/report-best-options/[id]/ReportBestOptions.module.css | 2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+
+commit a43f0f53c2b633e8290f0671baadf31df21f1cf0
+Author: bnbinder 
+Date:   Thu Dec 11 19:04:42 2025 -0500
+
+    Update README.md
+
+ shopcomp/README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 3c8ee578198498be5a5227f8e665893a7faaf333
+Merge: c4dba46 a497d76
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Thu Dec 11 18:56:12 2025 -0500
+
+    Merge pull request #39 from bnbinder/css-shopping-list-ben
+    
+    fix: css pretty
+
+commit c4dba462735b902501ec193f1ddd3b3d56bff704
+Author: bnbinder 
+Date:   Thu Dec 11 18:26:18 2025 -0500
+
+    fix: dual update from merge conflict
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 1592 ++++++++++-----------
+ 1 file changed, 773 insertions(+), 819 deletions(-)
+
+commit a497d762a9dfc3796e08109b47423444e6c6a8ae
+Author: bnbinder 
+Date:   Thu Dec 11 18:11:20 2025 -0500
+
+    fix: css pretty
+
+ .../shopping-list/ShoppingList.module.css          | 35 ++++++++++++++++++++--
+ 1 file changed, 33 insertions(+), 2 deletions(-)
+
+commit ed3a36d5252fc934cd642ca2123757a9d6d87a7c
+Merge: 2722c7c 2e854d6
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Thu Dec 11 14:41:24 2025 -0500
+
+    Merge pull request #38 from bnbinder/view-all-shopping-lists
+    
+    Return to view all shopping lists from viewing a specific list
+
+commit 2722c7cf89a6242bed144798197809bc3ad137a7
+Merge: 36afb98 b651d06
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Thu Dec 11 14:40:44 2025 -0500
+
+    Merge pull request #37 from bnbinder/edit-shopping-list-entry
+    
+    feat: edit shopping list entry
+
+commit 2e854d64314b610bd1bbf9a534c8326673e81a48
+Author: 17AlbinoZebras 
+Date:   Thu Dec 11 14:28:43 2025 -0500
+
+    feat: back to view all shopping lists from viewing a specific list
+
+ shopcomp/src/app/(protected)/shopping-list/edit/[id]/page.tsx | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit b651d061cfab7f4d19a552207fcca08ab1436b24
+Author: 17AlbinoZebras 
+Date:   Thu Dec 11 14:18:35 2025 -0500
+
+    feat: edit shopping list entry
+
+ .../(protected)/shopping-list/edit/[id]/page.tsx   | 89 +++++++++++++++++++---
+ .../app/api/shopper/edit-shopping-list-entry.ts    | 17 +++++
+ 2 files changed, 94 insertions(+), 12 deletions(-)
+
+commit 36afb98aae610ac2c3a9eb1cff94377cbb6b89c2
+Merge: bf3ca69 e5bced5
+Author: bnbinder 
+Date:   Thu Dec 11 13:45:03 2025 -0500
+
+    Merge pull request #36 from bnbinder/remove-shopping-list
+    
+    Remove shopping list
+
+commit bf3ca692c5e9d2d4717a521144ccfc3eb93f4e38
+Merge: 69dd4e0 0405745
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Thu Dec 11 13:43:56 2025 -0500
+
+    Merge pull request #35 from bnbinder/css-shopping-list-ben
+    
+    feat: css for all pages. no new features. if conflicts with edit-item too much then deny the PR and i/17AlbinoZebras can redo css
+
+commit e5bced552d0942f91d540ad60a8ef5e910975610
+Author: 17AlbinoZebras 
+Date:   Thu Dec 11 13:43:11 2025 -0500
+
+    feat: delete shopping list
+
+ .../src/app/(protected)/shopping-list/page.tsx     | 74 ++++++++++++++--------
+ .../src/app/api/shopper/delete-shopping-list.ts    | 14 ++++
+ 2 files changed, 60 insertions(+), 28 deletions(-)
+
+commit 69dd4e08c338cea4ca27ec6699d7f6dec0d48d63
+Author: bnbinder 
+Date:   Thu Dec 11 13:22:11 2025 -0500
+
+    readme stuff - finish most of use cases how 2 do
+
+ shopcomp/README.md | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+commit 04057452baec4d4c132b37158ed1d36d1de90050
+Merge: d40250b 9f7254c
+Author: bnbinder 
+Date:   Thu Dec 11 13:13:44 2025 -0500
+
+    Merge branch 'development' into css-shopping-list-ben
+
+commit 9f7254ca90bdbbcd037f93f22f1b6d88c15aef33
+Author: tdnguyen04 
+Date:   Thu Dec 11 12:00:14 2025 -0500
+
+    fix: disable delete account
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 15 ---------------
+ 1 file changed, 15 deletions(-)
+
+commit 74a97673e6b7d603ae12a4dda28c5968fdff7bfa
+Merge: e7e9a9e 607475a
+Author: bnbinder 
+Date:   Thu Dec 11 10:57:26 2025 -0500
+
+    Merge pull request #34 from bnbinder/review-receipts-history
+    
+    Revert "oops" because this was tha main change :`(
+
+commit 607475a4e6b39c72cca9004df2bb02b3b1b771d0
+Author: bnbinder 
+Date:   Thu Dec 11 10:56:06 2025 -0500
+
+    Revert "oops"
+    
+    This reverts commit 9676a6f4b080a6a75cd6b4e903d62d2cd97b9de2.
+
+ shopcomp/src/app/(protected)/review-receipts-history/page.tsx | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit d40250bdf1d21e47d8ec5175d489491573328496
+Author: bnbinder 
+Date:   Thu Dec 11 10:36:06 2025 -0500
+
+    feat: css for all pages. no new features
+    
+    just css no features
+
+ .../shopping-list/ShoppingList.module.css          | 149 ++++++++++++++++++++
+ .../edit/[id]/EditShoppingList.module.css          | 131 +++++++++++++++++
+ .../(protected)/shopping-list/edit/[id]/page.tsx   | 146 +++++++++++--------
+ .../src/app/(protected)/shopping-list/page.tsx     | 116 ++++++---------
+ .../[id]/ReportBestOptions.module.css              | 155 +++++++++++++++++++++
+ .../report-best-options/[id]/page.tsx              | 107 +++++++-------
+ 6 files changed, 626 insertions(+), 178 deletions(-)
+
+commit e7e9a9e1dca3be0ad59ddc176df10fa94f4a29dc
+Merge: 67557f5 cdeaa55
+Author: bnbinder 
+Date:   Thu Dec 11 10:23:15 2025 -0500
+
+    Merge pull request #33 from bnbinder/review-activity-ben
+    
+    fix: week to day
+
+commit cdeaa553eafe9403b759b4f59dd15ba712c661c4
+Author: bnbinder 
+Date:   Thu Dec 11 10:22:06 2025 -0500
+
+    fix: week to day
+    
+    intuitively smashing
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 67557f5d02e7aa358d3b434f9e4d3650074ea560
+Author: bnbinder 
+Date:   Wed Dec 10 19:23:47 2025 -0500
+
+    readme stuff - welcome, quirks, account, what to do, shopper use cases
+
+ shopcomp/README.md | 96 ++++++++++++++++++++++++++++++++++--------------------
+ 1 file changed, 61 insertions(+), 35 deletions(-)
+
+commit bfe3e1605bcba3ae28930a90acbeb8d0af5774e9
+Merge: 11239b5 6bfcb42
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 18:48:35 2025 -0500
+
+    Merge pull request #28 from bnbinder/review-activity-ben
+    
+    fix: css wrong? not high priority dont look unless you have time. simple stuff tho
+
+commit 11239b5ac97eebcc360930c125bad86fb2822353
+Merge: b8b2531 2694f93
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 18:48:16 2025 -0500
+
+    Merge pull request #32 from bnbinder/receipt-ben
+    
+    Receipt ben
+
+commit 2694f93ae76ac163f13ca34caa703cb673dc38e7
+Merge: 0b27ec2 b8b2531
+Author: bnbinder 
+Date:   Wed Dec 10 18:43:29 2025 -0500
+
+    Merge branch 'development' into receipt-ben
+
+commit 0b27ec234dd8b94c3a3764018d261427e12d4a75
+Author: bnbinder 
+Date:   Wed Dec 10 18:41:11 2025 -0500
+
+    oops wrong redirect
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 852c0de64c2482b18829e2d7e8ec62cec88876be
+Author: bnbinder 
+Date:   Wed Dec 10 18:40:15 2025 -0500
+
+    fix: redirect
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 6bfcb42c8d384fc7b5b3cd3ba8f97490087aeb77
+Merge: ce50cab b8b2531
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 18:31:40 2025 -0500
+
+    Merge branch 'development' into review-activity-ben
+
+commit b8b2531c45681aea2af0f659d2fdae12f6414c6f
+Merge: ebdfad8 9676a6f
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 18:28:52 2025 -0500
+
+    Merge pull request #30 from bnbinder/review-receipts-history
+    
+    fix: change from store name to chain name + store address
+
+commit ebdfad8b4ed39ca10db3c6c2a6a02d063da0e1f6
+Merge: cb8221d 879fe79
+Author: bnbinder 
+Date:   Wed Dec 10 13:54:20 2025 -0500
+
+    Merge pull request #29 from bnbinder/admin-bug-patches
+    
+    Admin bug patches
+
+commit 879fe796e522ea901ab891ccf2b92aefe3565e47
+Merge: 1821a29 cb8221d
+Author: codeitfast 
+Date:   Wed Dec 10 13:50:34 2025 -0500
+
+    Merge branch 'development' into admin-bug-patches
+
+commit cb8221d3aacabb123ddb55f8806b35d9809d1fb8
+Merge: 1343062 1303698
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 13:43:07 2025 -0500
+
+    Merge pull request #31 from bnbinder/receipt-ben
+    
+    fiX: date bug
+
+commit 1821a29c0ddcf16d66e4d457a005bb6a97b2261b
+Author: codeitfast 
+Date:   Wed Dec 10 13:42:54 2025 -0500
+
+    bug: type="number" -> type="text"
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 1506 +++++++++++----------
+ 1 file changed, 783 insertions(+), 723 deletions(-)
+
+commit 95e75d3fad1abca558ec3e31ef071935f72e9d17
+Merge: 8616a03 1343062
+Author: codeitfast 
+Date:   Wed Dec 10 13:32:41 2025 -0500
+
+    Merge branch 'development' into admin-bug-patches
+
+commit 13430624289558e2a1032e9996f7933e7d7dff5e
+Merge: 28676e0 e6bc2a0
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 13:28:07 2025 -0500
+
+    Merge pull request #26 from bnbinder/shopping-list-pages
+    
+    Shopping list pages
+
+commit e6bc2a0ee5fc37036fc0d50f0ff44c6ad8afd82a
+Author: codeitfast 
+Date:   Wed Dec 10 13:25:24 2025 -0500
+
+    bug: case insensitive
+
+ .../src/app/(protected)/shopping-list/report-best-options/[id]/page.tsx  | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 13036985a3c4d9ee50f3c3a9af8a617ec0739e7c
+Author: bnbinder 
+Date:   Wed Dec 10 13:24:51 2025 -0500
+
+    fiX: date bug
+    
+    was doing the day before because of utc conversion stuff
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+
+commit 9676a6f4b080a6a75cd6b4e903d62d2cd97b9de2
+Author: bnbinder 
+Date:   Wed Dec 10 13:20:12 2025 -0500
+
+    oops
+    
+    didnt upload
+
+ shopcomp/src/app/(protected)/review-receipts-history/page.tsx | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 0255f944bd08755e83e32da81b3de934f01fe4dc
+Author: bnbinder 
+Date:   Wed Dec 10 13:15:03 2025 -0500
+
+    fix: change from store name to chain name + store address
+    
+    makes more sense
+
+ .../(protected)/review-receipts-history/page.tsx   | 323 +++++++++++----------
+ 1 file changed, 162 insertions(+), 161 deletions(-)
+
+commit 8616a03e31216bdee7f99d63085a9066e2793567
+Merge: ea24769 28676e0
+Author: codeitfast 
+Date:   Wed Dec 10 13:02:57 2025 -0500
+
+    Merge branch 'development' into admin-bug-patches
+
+commit ea247692b3b78ca524ab4877cc5df0254d062306
+Author: codeitfast 
+Date:   Tue Dec 9 21:26:23 2025 -0500
+
+    bug: shoppers couldn't see any stores because "deleted" isn't returned to them.
+
+ shopcomp/src/app/(protected)/chains-and-stores/page.tsx | 1 -
+ shopcomp/src/app/(protected)/receipt-add/page.tsx       | 6 ++++--
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+commit bcd797cebfa20096a0891d929db7f132edb9ecf8
+Author: codeitfast 
+Date:   Tue Dec 9 21:18:41 2025 -0500
+
+    func: stores now give the amount of profit on the admin site
+
+ shopcomp/models/interfaces.ts                      |  6 +-
+ .../chains-and-stores/ChainsAndStores.module.css   | 17 +++-
+ .../chains-and-stores/chaincardadmin.tsx           | 84 ++++++++++++++-----
+ .../src/app/(protected)/chains-and-stores/page.tsx | 98 +++++++++++++++-------
+ shopcomp/src/app/(protected)/receipt-add/page.tsx  |  3 +-
+ shopcomp/src/app/api/admin/admin-store.ts          | 23 +++++
+ 6 files changed, 179 insertions(+), 52 deletions(-)
+
+commit 7c83344271860da05848260af90057b880bc6164
+Author: codeitfast 
+Date:   Tue Dec 9 20:20:30 2025 -0500
+
+    basic deleted admin page
+
+ shopcomp/models/interfaces.ts                      |   1 +
+ .../chains-and-stores/ChainsAndStores.module.css   |   8 ++
+ .../chains-and-stores/chaincardadmin.tsx           | 139 ++++++++++++---------
+ .../src/app/(protected)/chains-and-stores/page.tsx |   8 +-
+ 4 files changed, 98 insertions(+), 58 deletions(-)
+
+commit 423f1607254915f36285b824e6da050d208877b4
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 20:11:11 2025 -0500
+
+    fix: I missed updating an href
+
+ .../src/app/(protected)/shopping-list/report-best-options/[id]/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8bb2f15d5ad121b73f64dcd686d4bfe1e47f9fa1
+Author: codeitfast 
+Date:   Tue Dec 9 20:08:36 2025 -0500
+
+    admin can add stores now
+
+ shopcomp/models/interfaces.ts                      |  1 +
+ .../chains-and-stores/chaincardadmin.tsx           | 33 +++++++++++++++++++++-
+ .../src/app/(protected)/chains-and-stores/page.tsx |  2 +-
+ 3 files changed, 34 insertions(+), 2 deletions(-)
+
+commit ce50cabfd25c1b49991831d6cadca0f6822fa70a
+Author: bnbinder 
+Date:   Tue Dec 9 19:58:11 2025 -0500
+
+    fix: css wrong?
+    
+    how the hell did this css get here
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 37 +++++++++++------------
+ 1 file changed, 17 insertions(+), 20 deletions(-)
+
+commit 9db141a2a2520e5919864e7058324ca1144b1928
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 19:56:16 2025 -0500
+
+    fix: added navbar to shopping list pages
+
+ shopcomp/src/app/(protected)/shopping-list/edit/[id]/page.tsx           | 2 ++
+ shopcomp/src/app/(protected)/shopping-list/page.tsx                     | 2 ++
+ .../src/app/(protected)/shopping-list/report-best-options/[id]/page.tsx | 2 ++
+ 3 files changed, 6 insertions(+)
+
+commit 28676e0be2c080e1de448c4072fcbefba1370e1c
+Merge: c1ea371 1f142d5
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 9 19:53:57 2025 -0500
+
+    Merge pull request #27 from bnbinder/review-activity-ben
+    
+    Review activity ben
+
+commit 1f142d5319c3253c1f587901dfddca3308302bf4
+Merge: f03184a c1ea371
+Author: bnbinder 
+Date:   Tue Dec 9 19:48:43 2025 -0500
+
+    Merge branch 'development' into review-activity-ben
+
+commit f03184aeecd7feb6ee2683f1ad3004b98442281f
+Author: bnbinder 
+Date:   Tue Dec 9 19:46:46 2025 -0500
+
+    fix: button fillls in color
+    
+    merge made it only use "weekly" and not period bro what. why merge bad.
+
+ .../account-info/AccountInfo.module.css            | 463 ++++++++++++---------
+ shopcomp/src/app/(protected)/account-info/page.tsx |  82 ++--
+ 2 files changed, 298 insertions(+), 247 deletions(-)
+
+commit 8396b4e720063e03ed0dca3af86b8995fa1926a1
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 19:42:11 2025 -0500
+
+    fix: urls should all work now
+
+ shopcomp/src/app/(protected)/shopping-list/page.tsx                     | 2 +-
+ .../src/app/(protected)/shopping-list/report-best-options/[id]/page.tsx | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 4df445f7fd9835e471e10b8727b0386481edbf59
+Merge: acf9062 6031bb9
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 19:37:58 2025 -0500
+
+    Merge remote-tracking branch 'origin/report-options-for-shopping-list' into shopping-list-pages
+
+commit c1ea3714e66439f7d165a7a8d6ed968831440102
+Merge: acf9062 952a6f5
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 9 19:34:00 2025 -0500
+
+    Merge pull request #25 from bnbinder/receipt-ben
+    
+    Receipt ben
+
+commit a7ccc39477e064763f14cb20940aad693beb6884
+Merge: 414b535 acf9062
+Author: bnbinder 
+Date:   Tue Dec 9 19:21:53 2025 -0500
+
+    Merge branch 'development' into review-activity-ben
+
+commit 952a6f50f3bdf2ace4fb028e9b96770889aed42b
+Merge: d9d1181 acf9062
+Author: bnbinder 
+Date:   Tue Dec 9 19:21:32 2025 -0500
+
+    Merge branch 'development' into receipt-ben
+
+commit d9d1181b69783020d5b18e7512c7ef1cdbcc57a8
+Author: bnbinder 
+Date:   Tue Dec 9 19:20:36 2025 -0500
+
+    fix: prompt engineer and better store and chain trimming and replacing
+    
+    category sucked for prompt so asked claude to make it better. it works for the most part, AI is finicky since we arent giving it an explicit list to choose from. everything else works.
+    
+    chain and store trimmed by removing commas and spaces so all inputs are valid even if grader mis inputs but follows general format.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit dbdaa45ac30f2ddc82d7f9534ffabf3aefc8f723
+Author: bnbinder 
+Date:   Tue Dec 9 19:01:29 2025 -0500
+
+    feat: date time
+    
+    sleek date picker for grader if they want to test review activity. if nothing is picked it returns "" and lambda function will use NOW() to set it to todays date. dont care if ai doesnt choose date automatically but will ask prof just to be sure
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 53 ++++++++++++++++++++++-
+ shopcomp/src/app/api/shopper/submit-receipt.ts    |  1 +
+ 2 files changed, 53 insertions(+), 1 deletion(-)
+
+commit 414b53563e29273d17ddae861969f5433578dd5b
+Author: bnbinder 
+Date:   Tue Dec 9 19:20:36 2025 -0500
+
+    fix: prompt engineer and better store and chain trimming and replacing
+    
+    category sucked for prompt so asked claude to make it better. it works for the most part, AI is finicky since we arent giving it an explicit list to choose from. everything else works.
+    
+    chain and store trimmed by removing commas and spaces so all inputs are valid even if grader mis inputs but follows general format.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit 978c1abd185eb9636c6c91ccc906f7ab226502a0
+Author: bnbinder 
+Date:   Tue Dec 9 19:01:29 2025 -0500
+
+    feat: date time
+    
+    sleek date picker for grader if they want to test review activity. if nothing is picked it returns "" and lambda function will use NOW() to set it to todays date. dont care if ai doesnt choose date automatically but will ask prof just to be sure
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 53 ++++++++++++++++++++++-
+ shopcomp/src/app/api/shopper/submit-receipt.ts    |  1 +
+ 2 files changed, 53 insertions(+), 1 deletion(-)
+
+commit 2d9bda7f047e1eb249677ba3379e3dad251a84fb
+Author: codeitfast 
+Date:   Tue Dec 9 18:51:44 2025 -0500
+
+    funct: basic styling for adding a store
+
+ .../chains-and-stores/ChainsAndStores.module.css            | 13 +++++++++++++
+ .../src/app/(protected)/chains-and-stores/chaincard.tsx     |  7 +++++++
+ 2 files changed, 20 insertions(+)
+
+commit 6031bb914dc119b4d890fb8ab5b017461804bb53
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 18:46:48 2025 -0500
+
+    feat: shopping list pages now show name of list instead of ID
+
+ shopcomp/src/app/(protected)/shopping-list/edit/[id]/page.tsx | 11 +++++++----
+ shopcomp/src/app/(protected)/shopping-list/page.tsx           |  3 ++-
+ .../shopping-list/report-best-options/[id]/page.tsx           |  7 +++++--
+ 3 files changed, 14 insertions(+), 7 deletions(-)
+
+commit a3b3ad67a04113b333d084a7a5a36edff6a4b14e
+Author: codeitfast 
+Date:   Tue Dec 9 18:38:07 2025 -0500
+
+    basic homepage
+
+ shopcomp/components/HomePage.module.css | 79 +++++++++++++++++++++++++++++++++
+ shopcomp/components/HomePage.tsx        | 46 ++++++++++++++-----
+ 2 files changed, 113 insertions(+), 12 deletions(-)
+
+commit acf90629c9f5973c152ae724a3225704b4bc77dc
+Merge: 6989825 ff6ec91
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 9 16:01:21 2025 -0500
+
+    Merge pull request #23 from bnbinder/register
+    
+    feat(landing): basic landing page. Generated with Gemini.
+
+commit 70d1acf5883b80c6fbacb07a6d37e22966d9bba5
+Author: 17AlbinoZebras 
+Date:   Tue Dec 9 12:14:05 2025 -0500
+
+    Feat: Report best options for which stores have the cheapest prices for each item in a shopping list
+
+ .../(protected)/shopping-list/edit/[id]/page.tsx   |   7 +-
+ .../src/app/(protected)/shopping-list/page.tsx     |  16 +--
+ .../report-best-options/[id]/page.tsx              | 114 +++++++++++++++++++++
+ .../api/shopper/report-shopping-list-options.ts    |   4 +-
+ 4 files changed, 125 insertions(+), 16 deletions(-)
+
+commit ff6ec911c40b987cd695adc11ad234193491d1ce
+Author: codeitfast 
+Date:   Mon Dec 8 19:00:02 2025 -0500
+
+    feat(landing): basic landing page. Generated with Gemini.
+
+ shopcomp/components/Landing.css     | 236 ++++++++++++++++++++++++++++++++++++
+ shopcomp/components/LandingPage.tsx | 106 +++++++++++++---
+ 2 files changed, 327 insertions(+), 15 deletions(-)
+
+commit 6989825842639e91ea7c48ac3f62922909a4205c
+Merge: c0b34cc da71382
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Mon Dec 8 18:46:25 2025 -0500
+
+    Merge pull request #22 from bnbinder/search-recent-purchases
+    
+    Search recent purchases now works!
+
+commit da713829f375c1adf91de831f76b92b639d3df62
+Author: codeitfast 
+Date:   Mon Dec 8 18:46:04 2025 -0500
+
+    bug: slight style and ID patches
+
+ package-lock.json                                                 | 6 ++++++
+ .../search-recent-purchases/SearchRecentPurchases.module.css      | 7 ++++++-
+ shopcomp/src/app/(protected)/search-recent-purchases/page.tsx     | 8 ++++----
+ 3 files changed, 16 insertions(+), 5 deletions(-)
+
+commit 43198c1528da7985369af889c451d917a29484ae
+Author: tdnguyen04 
+Date:   Mon Dec 8 13:52:54 2025 -0500
+
+    fix: add a key to the separate item to stop nextjs from complaining
+
+ shopcomp/src/app/(protected)/search-recent-purchases/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a6ec3934a0c3d995348b31b8bb239955f7aa296f
+Author: tdnguyen04 
+Date:   Mon Dec 8 13:47:40 2025 -0500
+
+    fix: change the data schema to match backend API
+
+ .../(protected)/search-recent-purchases/page.tsx   |  6 +-
+ shopcomp/src/app/api/shopper/search-purchases.ts   | 76 +++++++++++-----------
+ 2 files changed, 41 insertions(+), 41 deletions(-)
+
+commit 302f91acf3eee8f7b692c00486865721f314d46e
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 15:53:51 2025 -0500
+
+    Pull from origin/shopping-list and add report-shopping-list-options.ts to api. Also deleted create-shopping-list-item from api since there is already add-to-shopping-list
+
+ shopcomp/models/interfaces.ts                      | 10 +++++++
+ shopcomp/src/app/api/shopper/chain-create-store.ts | 22 +++++++++++++++
+ .../app/api/shopper/create-shopping-list-item.ts   | 28 ------------------
+ shopcomp/src/app/api/shopper/get-stores.ts         | 22 +++++++++++++++
+ .../api/shopper/report-shopping-list-options.ts    | 33 ++++++++++++++++++++++
+ .../src/app/api/shopper/shopping-list-options.ts   | 32 ---------------------
+ 6 files changed, 87 insertions(+), 60 deletions(-)
+
+commit d503f6c49f5587cb546d524a332560afe744c999
+Author: bnbinder 
+Date:   Sun Dec 7 11:58:00 2025 -0500
+
+    fix: uuid package
+
+ shopcomp/package-lock.json | 15 ++++++++++++++-
+ shopcomp/package.json      |  3 ++-
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+commit e7d48de22c5f3f8e781df6bfd6619afd1baa9a55
+Author: bnbinder 
+Date:   Sun Dec 7 11:31:13 2025 -0500
+
+    fix: change header
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+commit ddc3e85b9e091cd3e2e13489e07c2c97e557410a
+Author: bnbinder 
+Date:   Sat Dec 6 19:34:32 2025 -0500
+
+    feat: review activity
+
+ .../account-info/AccountInfo.module.css            |  70 ++++-
+ shopcomp/src/app/(protected)/account-info/page.tsx | 316 +++++++++++++--------
+ shopcomp/src/app/api/shopper/review-activity.ts    |  22 +-
+ 3 files changed, 284 insertions(+), 124 deletions(-)
+
+commit c10080f32a326352f12b1987f1a3bf90e24a9c98
+Author: codeitfast 
+Date:   Sat Dec 6 18:47:15 2025 -0500
+
+    bug(chain-card-admin): number of stores should be number of not deleted stores
+
+ shopcomp/src/app/(protected)/chains-and-stores/chaincardadmin.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit aa6ee4d6a2adaa377ef921fe224b587b7adaaac3
+Author: codeitfast 
+Date:   Sat Dec 6 18:43:38 2025 -0500
+
+    func(remove-store): admin can now delete stores. They cannot undelete stores, and deleted stores show up as "deleted"
+
+ shopcomp/models/interfaces.ts                      |  7 +++++--
+ .../(protected)/chains-and-stores/chaincard.tsx    |  2 +-
+ .../chains-and-stores/chaincardadmin.tsx           | 24 ++++++++++++++++------
+ .../src/app/(protected)/chains-and-stores/page.tsx | 14 +++++++++++--
+ shopcomp/src/app/api/admin/remove-store.ts         |  4 ++--
+ 5 files changed, 38 insertions(+), 13 deletions(-)
+
+commit 167e20c62a736027cf665eb903a26a9546a360b2
+Author: codeitfast 
+Date:   Fri Dec 5 13:29:38 2025 -0500
+
+    remove store axios
+
+ shopcomp/src/app/api/admin/remove-store.ts | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+commit c416813c1ed40ec1f5c5f3d227e3e136f88544c8
+Author: bnbinder 
+Date:   Sat Dec 6 17:10:04 2025 -0500
+
+    fix: prompt engineering so if bad address it just gives address
+    
+    so if it says store: walmart and chain: wlamart it will return exacltey what it says.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit c0b34cc85404935bfafe6a81753fe41e1295438b
+Merge: d20a603 828c539
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sun Dec 7 13:24:45 2025 -0500
+
+    Merge pull request #21 from bnbinder/review-activity-ben
+    
+    feat: review activity
+
+commit d20a6037b69d245139ed7f259171368032465fce
+Merge: f3b266f 7e46591
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sun Dec 7 13:24:29 2025 -0500
+
+    Merge pull request #20 from bnbinder/remove-store
+    
+    Remove store
+
+commit f3b266f7db595ee1f4641617a6c5914807b8ecb2
+Merge: 318c7f1 7fe21ce
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sun Dec 7 12:07:13 2025 -0500
+
+    Merge pull request #19 from bnbinder/receipt-ben
+    
+    fix: prompt engineering so if bad address it just gives address
+
+commit 828c5390102fd8d9202cc82adb1309ff37c944dd
+Author: bnbinder 
+Date:   Sun Dec 7 11:58:00 2025 -0500
+
+    fix: uuid package
+
+ shopcomp/package-lock.json | 15 ++++++++++++++-
+ shopcomp/package.json      |  3 ++-
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+commit 820f3c1b770ece00fee2eff2fe5a5041887f580f
+Author: codeitfast 
+Date:   Sun Dec 7 11:47:25 2025 -0500
+
+    func(shopping-list): shoppers now can remove items from shopping lists
+
+ .../(protected)/shopping-list/edit/[id]/page.tsx   |  7 ++++++
+ .../app/api/shopper/remove-from-shopping-list.ts   | 27 +++++++++++++---------
+ 2 files changed, 23 insertions(+), 11 deletions(-)
+
+commit 10d78550a5cbd757f398d3a27a28d753de786f38
+Merge: e9ebb7c 318c7f1
+Author: codeitfast 
+Date:   Sun Dec 7 11:41:58 2025 -0500
+
+    Merge branch 'development' into shopping-list
+
+commit e9ebb7cf7526d5b595ff7439cd34bbc13fcd3429
+Author: codeitfast 
+Date:   Sun Dec 7 11:40:59 2025 -0500
+
+    formatting
+
+ .../(protected)/shopping-list/edit/[id]/page.tsx   | 87 ++++++++++++----------
+ 1 file changed, 48 insertions(+), 39 deletions(-)
+
+commit b5102a9ed3feced0764084ae6e8abaea0fde6785
+Author: tdnguyen04 
+Date:   Sun Dec 7 11:33:26 2025 -0500
+
+    fix: change sub to shopperID
+
+ .../app/(protected)/search-recent-purchases/page.tsx |  4 ++--
+ shopcomp/src/app/api/shopper/search-purchases.ts     | 20 ++++++++++----------
+ 2 files changed, 12 insertions(+), 12 deletions(-)
+
+commit e99fc5d8dfb37a1d7a62eb53a2aa83b2f3eb1b18
+Author: bnbinder 
+Date:   Sun Dec 7 11:31:13 2025 -0500
+
+    fix: change header
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+commit 8652ad0e3bebf729856c5298212759923ab15c6f
+Author: tdnguyen04 
+Date:   Sun Dec 7 10:39:44 2025 -0500
+
+    feat: add mock search-recent-purchases with mock data. Backend data coming soon
+
+ shopcomp/components/HomePage.tsx                   |   2 +-
+ .../SearchRecentPurchases.module.css               | 150 +++++++++++++++++++++
+ .../(protected)/search-recent-purchases/page.tsx   | 110 +++++++++++++++
+ shopcomp/src/app/api/shopper/search-purchases.ts   |  99 +++++++++++---
+ 4 files changed, 341 insertions(+), 20 deletions(-)
+
+commit a67528843e6019416be67342a60997337ed4ef77
+Author: codeitfast 
+Date:   Sat Dec 6 20:39:47 2025 -0500
+
+    shoppings lists can now add items, under shopping-list/edit/shopping-list-id-here
+
+ shopcomp/models/interfaces.ts                      |   8 ++
+ .../(protected)/shopping-list/edit/[id]/page.tsx   | 100 ++++++++++++++++++---
+ .../src/app/api/shopper/add-to-shopping-list.ts    |  16 ++++
+ .../app/api/shopper/get-shopping-list-entries.ts   |  10 +++
+ 4 files changed, 122 insertions(+), 12 deletions(-)
+
+commit 5ed5ce4ebad4331870224e1ff70db59fa3050fb5
+Author: codeitfast 
+Date:   Sat Dec 6 20:01:30 2025 -0500
+
+    functionality: shows all shoppings lists, as well as links to the edit page
+
+ shopcomp/models/interfaces.ts                      |   6 +
+ shopcomp/next.config.ts                            |   2 +-
+ .../(protected)/shopping-list/edit/[id]/page.tsx   |  16 ++
+ .../src/app/(protected)/shopping-list/page.tsx     | 224 ++++++++++++---------
+ .../src/app/api/shopper/create-shopping-list.ts    |   3 +-
+ 5 files changed, 149 insertions(+), 102 deletions(-)
+
+commit ebf1f25742978e4192d63249ccad373e8deba8fc
+Author: bnbinder 
+Date:   Sat Dec 6 19:34:32 2025 -0500
+
+    feat: review activity
+
+ .../account-info/AccountInfo.module.css            |  70 ++++-
+ shopcomp/src/app/(protected)/account-info/page.tsx | 316 +++++++++++++--------
+ shopcomp/src/app/api/shopper/review-activity.ts    |  22 +-
+ 3 files changed, 284 insertions(+), 124 deletions(-)
+
+commit 7e46591687a8702f27d168ec1b61f4a186efc916
+Author: codeitfast 
+Date:   Sat Dec 6 18:47:15 2025 -0500
+
+    bug(chain-card-admin): number of stores should be number of not deleted stores
+
+ shopcomp/src/app/(protected)/chains-and-stores/chaincardadmin.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 92803b1fe247f8ddc524602873daaf77749ace39
+Author: codeitfast 
+Date:   Sat Dec 6 18:43:38 2025 -0500
+
+    func(remove-store): admin can now delete stores. They cannot undelete stores, and deleted stores show up as "deleted"
+
+ shopcomp/models/interfaces.ts                      |  7 +++++--
+ .../(protected)/chains-and-stores/chaincard.tsx    |  2 +-
+ .../chains-and-stores/chaincardadmin.tsx           | 24 ++++++++++++++++------
+ .../src/app/(protected)/chains-and-stores/page.tsx | 14 +++++++++++--
+ shopcomp/src/app/api/admin/remove-store.ts         |  4 ++--
+ 5 files changed, 38 insertions(+), 13 deletions(-)
+
+commit d2a429fbfaf81eceb83a21a9f2a25807637726f1
+Merge: ed7bc29 318c7f1
+Author: codeitfast 
+Date:   Sat Dec 6 18:14:42 2025 -0500
+
+    Merge branch 'development' into remove-store
+
+commit 2da609efaeb18e164f12960ea75193b7d657dc41
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 17:51:27 2025 -0500
+
+    fix: move shopping-lists to (protected) and make it accessible from home page and navbar
+
+ shopcomp/components/HomePage.tsx                   |  1 +
+ shopcomp/components/Navbar.tsx                     |  2 +-
+ .../app/{ => (protected)}/shopping-list/page.tsx   | 59 +++++++++++++++-------
+ shopcomp/src/app/api/shopper/get-shopping-lists.ts |  9 ++++
+ 4 files changed, 52 insertions(+), 19 deletions(-)
+
+commit 7fe21ce8bc6b392ac6b16103194369abeb8e8feb
+Author: bnbinder 
+Date:   Sat Dec 6 17:10:04 2025 -0500
+
+    fix: prompt engineering so if bad address it just gives address
+    
+    so if it says store: walmart and chain: wlamart it will return exacltey what it says.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 318c7f1bf55a659993307bf1019efe51a8fe22cb
+Merge: 22eb973 5251300
+Author: tdnguyen04 
+Date:   Sat Dec 6 16:24:22 2025 -0500
+
+    Merge branch 'development' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into development
+
+commit 52513000c053fd8888e81a9ea0188f807e3dd64f
+Merge: 402fc8f 13bca81
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Dec 6 16:11:30 2025 -0500
+
+    Merge pull request #16 from bnbinder/review-receipts-history
+    
+    feat: add page review history
+
+commit 22eb973b28ba371958b742fc8de17d9aee430e21
+Merge: b255503 13bca81
+Author: tdnguyen04 
+Date:   Sat Dec 6 16:06:31 2025 -0500
+
+    Merge branch 'review-receipts-history' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into development
+
+commit b25550325236ee989d8e00bc04e6c07f54079ac6
+Author: bnbinder 
+Date:   Sat Dec 6 13:28:35 2025 -0500
+
+    fix: date now handled in lambda
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 3 +--
+ shopcomp/src/app/api/shopper/submit-receipt.ts    | 1 -
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+
+commit 06a61c80dd24eaa28837b67f494f1cc30edf9f32
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 11:21:03 2025 -0500
+
+    feat: create new list
+
+ .../src/app/api/shopper/create-shopping-list.ts    |  25 ++---
+ shopcomp/src/app/shopping-list/page.tsx            | 104 +++++++++++++++++++++
+ 2 files changed, 118 insertions(+), 11 deletions(-)
+
+commit 13bca815b4c5cfa8dc0d20e325d0ed7502089101
+Author: tdnguyen04 
+Date:   Fri Dec 5 18:14:23 2025 -0500
+
+    feat: add Ben's new feature to allow create receipt from review-receipts page
+
+ shopcomp/src/app/(protected)/review-receipts-history/page.tsx | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+commit 402fc8f896de32aabd4507295d5169635bdc3499
+Author: bnbinder 
+Date:   Fri Dec 5 16:03:29 2025 -0500
+
+    oops: typescript want type
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b258c17b295dccf930f69cdb79400c82dee325f3
+Author: bnbinder 
+Date:   Fri Dec 5 16:00:23 2025 -0500
+
+    fix: buggy alert user about store or chain not exisitng
+    
+    fixed, just store the state of whether chain or store found in local var and check with that rather than state which may take tijme to update
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 20 ++++++++++++++------
+ 1 file changed, 14 insertions(+), 6 deletions(-)
+
+commit 5f5e4f78abb0a8f69915befa9717352eae2a6625
+Merge: 35f4e00 bcffbfe
+Author: bnbinder 
+Date:   Fri Dec 5 15:22:13 2025 -0500
+
+    Merge branch 'development' into receipt-ben
+
+commit bcffbfef05261dfdc4841c66ab761ab4a87f69b0
+Merge: 8e43486 089392b
+Author: tdnguyen04 
+Date:   Fri Dec 5 14:01:31 2025 -0500
+
+    Merge branch 'add-store' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into development
+
+commit 57731e18915537b6937ca8043ad3cb6d271633d5
+Author: tdnguyen04 
+Date:   Fri Dec 5 13:57:53 2025 -0500
+
+    feat: add page review history
+
+ shopcomp/components/Navbar.tsx                     |   2 +-
+ shopcomp/package-lock.json                         |   7 +-
+ shopcomp/package.json                              |   1 +
+ .../ReviewReceiptsHistory.module.css               | 188 ++++++++++++++++++++
+ .../(protected)/review-receipts-history/page.tsx   | 191 +++++++++++++++++++++
+ shopcomp/src/app/api/shopper/review-history.ts     |  17 +-
+ 6 files changed, 391 insertions(+), 15 deletions(-)
+
+commit 35f4e00ab3a1d32910e146483b5867ba38bf6afe
+Merge: ed76949 2d27f5a
+Author: bnbinder 
+Date:   Fri Dec 5 13:45:28 2025 -0500
+
+    Merge branch 'receipt-ben' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into receipt-ben
+
+commit ed76949452efb98476c50a1cbd2de390d299ae3f
+Author: bnbinder 
+Date:   Fri Dec 5 13:45:16 2025 -0500
+
+    oops 2: key in item duplicate so add index to make unique
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 19 ++++++++++++++++---
+ 1 file changed, 16 insertions(+), 3 deletions(-)
+
+commit 2d27f5a4715dfd7ad67bed3e62234809813bbeaa
+Merge: 0a9a58e 5c660ac
+Author: codeitfast 
+Date:   Fri Dec 5 13:37:41 2025 -0500
+
+    Merge branch 'receipt-ben' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into receipt-ben
+
+commit 0a9a58e4f2d41193912c3725e099b40afe6b4535
+Author: codeitfast 
+Date:   Fri Dec 5 13:37:40 2025 -0500
+
+    bug(image upload): only JPG, JPEG, PNG, and WEBP accepted
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5c660acc9936708ac97b1d6daa6d4a987f94ed4b
+Author: bnbinder 
+Date:   Fri Dec 5 13:34:22 2025 -0500
+
+    oops
+    
+    it is total price
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ed7bc298fe60bc94094393de02daa7edf224880c
+Author: codeitfast 
+Date:   Fri Dec 5 13:29:38 2025 -0500
+
+    remove store axios
+
+ shopcomp/src/app/api/admin/remove-store.ts | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+commit 7ed9e78573c1ed5c62d27208e43390c83c6e899e
+Author: bnbinder 
+Date:   Fri Dec 5 13:28:31 2025 -0500
+
+    fix: pretty!
+    
+    added css to store and chain dropdown as well as individual item displays also spaced out items and center stuff
+
+ .../(protected)/receipt-add/ReceiptAdd.module.css  | 137 ++++++++++++-
+ shopcomp/src/app/(protected)/receipt-add/page.tsx  | 220 +++++++++++++--------
+ 2 files changed, 273 insertions(+), 84 deletions(-)
+
+commit bde3ece4a952b299fb04431a12e673768b0fae96
+Author: bnbinder 
+Date:   Fri Dec 5 10:40:56 2025 -0500
+
+    fix: items now sumits price/quantity for all items
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit 70fd5c0eb5a342344e26e97b62ad9df4ba1e3d8c
+Author: bnbinder 
+Date:   Thu Dec 4 19:38:52 2025 -0500
+
+    fix: openai call now manually updates chain
+    
+    it should also update store but need more data in db to test
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 37 ++++++++++++++++++++---
+ 1 file changed, 33 insertions(+), 4 deletions(-)
+
+commit 089392bd67521d7a5f34e2b76eec381b34a3ce1d
+Author: codeitfast 
+Date:   Thu Dec 4 19:36:11 2025 -0500
+
+    bug(add-store-local): name and address were flipped
+
+ shopcomp/src/app/api/shopper/add-store.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b4a0a02df5d4c53f13cb558ecb6375fcb7942c8a
+Author: codeitfast 
+Date:   Thu Dec 4 19:29:32 2025 -0500
+
+    func(frontend): create store in each chain
+
+ shopcomp/models/interfaces.ts                      |  3 ++-
+ .../(protected)/chains-and-stores/chaincard.tsx    | 16 ++++++++--------
+ .../src/app/(protected)/chains-and-stores/page.tsx | 10 +++++++++-
+ shopcomp/src/app/api/shopper/add-store.ts          | 16 ++++++++--------
+ shopcomp/src/app/api/shopper/chain-create-store.ts | 22 ----------------------
+ 5 files changed, 27 insertions(+), 40 deletions(-)
+
+commit 46c403c8e5a95dbf4197c83a182dd2598df3dec8
+Merge: 4905707 744d3f8
+Author: codeitfast 
+Date:   Thu Dec 4 18:55:48 2025 -0500
+
+    Merge branch 'receipt-ben' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon into receipt-ben
+
+commit 744d3f858b70bbb3fc294aa67b18c05117f41dd6
+Author: bnbinder 
+Date:   Thu Dec 4 18:54:39 2025 -0500
+
+    fix: wrong token lol
+    
+    not id token but sub. but works now. just need to implement automatic store and chain when ai for receipt scan
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4905707e2c3897b4c47d439dada93ff07e6ee882
+Author: codeitfast 
+Date:   Thu Dec 4 18:50:13 2025 -0500
+
+    stub
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx |  4 ++--
+ shopcomp/src/app/api/shopper/submit-receipt.ts    | 12 ++++++------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+commit a3659586e3d4a7755ca6d2605af509e2ff09ee86
+Merge: 4bb495a 8e43486
+Author: bnbinder 
+Date:   Thu Dec 4 18:43:24 2025 -0500
+
+    Merge branch 'development' into receipt-ben
+
+commit 3ebc973bcd79da775353b592d4ab81ebd2fee370
+Merge: 4bb495a 8e43486
+Author: codeitfast 
+Date:   Thu Dec 4 18:35:48 2025 -0500
+
+    qerge branch 'development' into receipt-ben
+    
+    merge
+
+commit 8e434861ef2822d9b3d9ac43c52de3358722e145
+Merge: 949ca8c 5f9b631
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Thu Dec 4 18:31:15 2025 -0500
+
+    Merge pull request #13 from bnbinder/list-stores-ben
+    
+    Changed the list-stores from a mock to real API call.
+
+commit 06e67da40cbf1ae2c6b2380c10ce50c39e5a27c5
+Author: codeitfast 
+Date:   Thu Dec 4 17:02:02 2025 -0500
+
+    cache
+
+ .../(protected)/chains-and-stores/chaincard.tsx    | 109 +++++++++
+ .../chains-and-stores/chaincardadmin.tsx           |  86 +++++++
+ .../(protected)/chains-and-stores/chainmodal.tsx   |  94 ++++++++
+ .../src/app/(protected)/chains-and-stores/page.tsx | 264 +--------------------
+ shopcomp/src/app/api/shopper/add-store.ts          |  16 ++
+ 5 files changed, 310 insertions(+), 259 deletions(-)
+
+commit 5f9b631526370d8921be5675397d450ebede7cd6
+Author: bnbinder 
+Date:   Thu Dec 4 16:05:11 2025 -0500
+
+    fix; from mock to real
+
+ shopcomp/src/app/api/shopper/list-stores.ts | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit 4bb495a095e8c251bf63801734c01507f1726293
+Author: bnbinder 
+Date:   Thu Dec 4 16:03:36 2025 -0500
+
+    fix: dropdown works and submit is done
+    
+    dropdown was being finnicky when resetting, so found a workaround. submit receipt use case done.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 122 +++++++++++++---------
+ 1 file changed, 74 insertions(+), 48 deletions(-)
+
+commit 960ba2f39f9985627a9c3a60b18bf901947227cb
+Author: bnbinder 
+Date:   Thu Dec 4 13:07:57 2025 -0500
+
+    fix: use uuidv4
+    
+    also remove receiptid since generated in lambda function
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 30 ++++++++++++++---------
+ shopcomp/src/app/api/shopper/submit-receipt.ts    |  1 -
+ 2 files changed, 19 insertions(+), 12 deletions(-)
+
+commit b0e4b1a4b729f89326f0c16587e8b4e8bd4870a2
+Merge: 5805854 949ca8c
+Author: bnbinder 
+Date:   Wed Dec 3 13:16:46 2025 -0500
+
+    Merge branch 'development' into receipt-ben
+
+commit 949ca8c75c66c04589c2d907d43adffc2ad5c473
+Merge: 391a796 6deea3c
+Author: bnbinder 
+Date:   Wed Dec 3 13:14:48 2025 -0500
+
+    Merge pull request #12 from bnbinder/get-all-stores
+    
+    Get all stores for shopper
+
+commit 5805854fe5bb054f75b830c1ff07ea2367fb7291
+Author: codeitfast 
+Date:   Wed Dec 3 13:10:56 2025 -0500
+
+    axios path
+
+ shopcomp/src/app/api/axios.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0c1896cdec437e33bce3bd5bb2040aaa24a7624d
+Author: bnbinder 
+Date:   Wed Dec 3 10:45:39 2025 -0500
+
+    fix/feat: everything should work now
+    
+    added submit receipt axios call and data to submit in page.tsx
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 211 ++++++++--------------
+ shopcomp/src/app/api/shopper/submit-receipt.ts    |  26 +--
+ 2 files changed, 85 insertions(+), 152 deletions(-)
+
+commit 6deea3c99bc1e88294e98eaeb5369c2eb1e99f90
+Merge: db731ab 391a796
+Author: codeitfast 
+Date:   Tue Dec 2 18:39:05 2025 -0500
+
+    Merge remote-tracking branch 'origin/development' into get-all-stores
+
+commit db731ab94ecf91b0bd5a272a9293b33df942e684
+Author: codeitfast 
+Date:   Tue Dec 2 18:38:58 2025 -0500
+
+    func(get-all-stores): get all stores and displays on screen load.
+
+ shopcomp/models/interfaces.ts                      |  6 ++--
+ .../src/app/(protected)/chains-and-stores/page.tsx | 34 ++++++++++++----------
+ shopcomp/src/app/api/shopper/list-all-stores.ts    | 22 ++++++++++++++
+ .../api/shopper/{get-stores.ts => list-stores.ts}  |  4 +--
+ 4 files changed, 47 insertions(+), 19 deletions(-)
+
+commit 391a7966681c07f66cb67d145c9146d39aebeba7
+Merge: fd6ca50 704a4cc
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 2 14:36:57 2025 -0500
+
+    Merge pull request #10 from bnbinder/remove-chain
+    
+    remove chains now works for admin
+
+commit c67fe0aac4b85e2339910cd2c58d1d9a98862dca
+Merge: 704a4cc fd6ca50
+Author: codeitfast 
+Date:   Tue Dec 2 14:14:35 2025 -0500
+
+    Merge remote-tracking branch 'origin/development' into remove-chain
+
+commit 704a4ccc4c6321412828dc86ab86f6400f94ef22
+Author: codeitfast 
+Date:   Tue Dec 2 14:11:50 2025 -0500
+
+    remove chains now works for admin
+
+ shopcomp/models/interfaces.ts                      |  9 ++++
+ .../src/app/(protected)/chains-and-stores/page.tsx | 48 +++++-----------------
+ shopcomp/src/app/api/admin/remove-chain.ts         | 23 +++++++++++
+ shopcomp/src/app/api/axios.ts                      |  2 +-
+ 4 files changed, 44 insertions(+), 38 deletions(-)
+
+commit f3168ce3a2a278586dba6fd109e29970e7386165
+Author: bnbinder 
+Date:   Mon Dec 1 19:00:22 2025 -0500
+
+    fix: prompt engineering to return valid json
+    
+    need to store chain and store but items dynamically update when scanned
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 138 +++++++++++++++++++++-
+ 1 file changed, 132 insertions(+), 6 deletions(-)
+
+commit fd6ca50e183298d76268e8dfaa125aa6baddda14
+Merge: 7129a87 3650983
+Author: bnbinder 
+Date:   Mon Dec 1 18:10:22 2025 -0500
+
+    Merge branch 'change-password' into development
+
+commit 7129a8726f6db77c1d218738116eb6cf1f4888f4
+Merge: f73f1dd 4c65523
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Dec 1 13:26:58 2025 -0500
+
+    Merge pull request #8 from bnbinder/account-info
+    
+    Account info is pretty straight forward, so I will simply merge it
+
+commit 3650983a9fa792c4a578f80c193c2926c41e9aae
+Author: tdnguyen04 
+Date:   Sun Nov 30 19:48:47 2025 -0500
+
+    feat: add change password logic
+
+ .../account-info/AccountInfo.module.css            | 116 +++++++++++++++
+ .../account-info/ChangePasswordModal.tsx           | 158 +++++++++++++++++++++
+ shopcomp/src/app/(protected)/account-info/page.tsx |  15 +-
+ shopcomp/src/app/api/shopper/change-password.ts    |  28 ++++
+ 4 files changed, 314 insertions(+), 3 deletions(-)
+
+commit 4c655234200ea4769cf8cd2bf8fdbb2f1283bcc9
+Author: tdnguyen04 
+Date:   Sun Nov 30 17:24:20 2025 -0500
+
+    feat: pull email from real user's info
+
+ shopcomp/src/app/(protected)/account-info/page.tsx | 25 ++++++----------------
+ 1 file changed, 7 insertions(+), 18 deletions(-)
+
+commit f36102c2f37da7e938c0ec2560c37d69e35a74d1
+Author: tdnguyen04 
+Date:   Sun Nov 30 17:19:35 2025 -0500
+
+    feat: add mockup UI with hardcoded username, change password as a <span> and delete account with no logic yet
+
+ shopcomp/components/Navbar.tsx                     |   2 +-
+ .../account-info/AccountInfo.module.css            | 186 +++++++++++++++++++++
+ shopcomp/src/app/(protected)/account-info/page.tsx | 136 +++++++++++++++
+ 3 files changed, 323 insertions(+), 1 deletion(-)
+
+commit 9836e3c82e08ff65a7c793476c8092537912b0c1
+Author: bnbinder 
+Date:   Sun Nov 30 14:38:08 2025 -0500
+
+    feat: openai call scans receipt
+    
+    tested it on image found on web, will need to do prompt engineering to make it return valid names not shorthands and also categories and make it readable for json and database. but call works. also its free which is cool.
+    
+    need to:
+    - disable close if scan is pressed
+    - make things pretty
+    - convert ai response to receiptitem objects (prompt engineering)
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 180 ++++++++++++++++++++--
+ 1 file changed, 164 insertions(+), 16 deletions(-)
+
+commit 0b8c157bd98749b3f4344518122e8d55a2329147
+Author: bnbinder 
+Date:   Sun Nov 30 13:59:35 2025 -0500
+
+    fix: some cleanup
+    
+    change chain names to receipt
+
+ .../(protected)/receipt-add/ReceiptAdd.module.css  | 105 +++++++++++++++++++--
+ shopcomp/src/app/(protected)/receipt-add/page.tsx  |  50 ++++------
+ 2 files changed, 116 insertions(+), 39 deletions(-)
+
+commit 063c1229ae46046905be3625aa71174e72f27733
+Author: bnbinder 
+Date:   Sun Nov 30 13:49:11 2025 -0500
+
+    feat: select chain and store
+    
+    need to test store when stores added to test chains
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 80 ++++++++++++++++++++++-
+ 1 file changed, 79 insertions(+), 1 deletion(-)
+
+commit b1fb2e90dd0437f38b40ecec05100f8ce32587f4
+Author: bnbinder 
+Date:   Sun Nov 30 13:31:02 2025 -0500
+
+    feat: edit item
+    
+    works.
+
+ shopcomp/src/app/(protected)/receipt-add/page.tsx | 160 +++++++++++++++++++---
+ 1 file changed, 144 insertions(+), 16 deletions(-)
+
+commit c76b671bef067bff5546de5e7ad320fd76a7293a
+Author: bnbinder 
+Date:   Sun Nov 30 13:12:40 2025 -0500
+
+    feat: add item and remove item for receipt
+    
+    doesnt look pretty, will fix that when done with receipt page
+
+ shopcomp/components/HomePage.tsx                   |   1 +
+ shopcomp/package-lock.json                         |  37 ++-
+ .../(protected)/receipt-add/ReceiptAdd.module.css  | 271 +++++++++++++++++++++
+ shopcomp/src/app/(protected)/receipt-add/page.tsx  | 212 ++++++++++++++++
+ 4 files changed, 508 insertions(+), 13 deletions(-)
+
+commit f73f1dd648bcdbd153d9612b1eb17baa39fe7d6e
+Merge: b644340 6be6c75
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Nov 24 19:17:18 2025 -0500
+
+    Merge pull request #7 from bnbinder/sign-out
+    
+    Sign out
+
+commit 6be6c758cfd71d310f62583b1d3a881484cc0841
+Author: codeitfast 
+Date:   Mon Nov 24 19:16:06 2025 -0500
+
+    changed favicon
+
+ shopcomp/src/app/favicon.ico | Bin 25931 -> 379759 bytes
+ shopcomp/src/app/layout.tsx  |   4 ++--
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 09705d588fd442fb743744a53ed8b8ed0a1bae3a
+Author: codeitfast 
+Date:   Mon Nov 24 19:09:31 2025 -0500
+
+    button name changed
+
+ shopcomp/components/LandingPage.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 33d1f85b5c65ec79fb28197bf9a5d90db49062d1
+Merge: 2c759cd b644340
+Author: codeitfast 
+Date:   Mon Nov 24 14:07:45 2025 -0500
+
+    Merge branch 'main' into sign-out
+
+commit 2c759cd2d6156cfaa570a8f8928feafe399a9667
+Author: codeitfast 
+Date:   Mon Nov 24 14:05:28 2025 -0500
+
+    navbar changed slightly
+
+ shopcomp/components/Navbar.tsx | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit b644340bcfb64c5c172afa111eb9f319c8065e78
+Author: tdnguyen04 
+Date:   Mon Nov 24 12:54:50 2025 -0500
+
+    fix: fix compile error
+
+ shopcomp/src/app/(protected)/chains-and-stores/page.tsx | 10 +++-------
+ shopcomp/src/app/page.tsx                               | 11 ++---------
+ 2 files changed, 5 insertions(+), 16 deletions(-)
+
+commit 06d0f94c9388455b99f7a764a789f2a5cfabbf68
+Merge: b6cee4f 1cc5a9e
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Mon Nov 24 11:55:35 2025 -0500
+
+    Merge branch 'main' of https://github.com/bnbinder/CS3733-Group-Project-Epsilon
+
+commit b6cee4fcce8872b67dbe288569b71b28df8b3db6
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Mon Nov 24 11:55:04 2025 -0500
+
+    fix: wrap up final program for first iteration submission
+
+ shopcomp/components/HomePage.tsx      |  7 ++--
+ shopcomp/components/Navbar.module.css |  7 ++++
+ shopcomp/components/Navbar.tsx        | 68 ++++++++++++++++++++++-------------
+ 3 files changed, 52 insertions(+), 30 deletions(-)
+
+commit 1cc5a9eac17cd9cafa23119a2085a733cccc91ab
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Mon Nov 24 11:53:44 2025 -0500
+
+    fix: wrap up final program for first iteration submission
+
+ shopcomp/components/HomePage.tsx      |  7 ++--
+ shopcomp/components/Navbar.module.css |  7 ++++
+ shopcomp/components/Navbar.tsx        | 68 ++++++++++++++++++++++-------------
+ 3 files changed, 52 insertions(+), 30 deletions(-)
+
+commit a1ab9fe695558cf57f55c2e0750f7fb5ad493928
+Merge: bfc24e2 78b9411
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Mon Nov 24 11:35:47 2025 -0500
+
+    Merge main to adminSales
+
+commit bfc24e202fcc4b9d9a656b8d29e0b115c5611923
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Mon Nov 24 11:27:30 2025 -0500
+
+    feat: fix UI of chainSales to show dollar sign and move to the middle
+
+ .../chains-and-stores/ChainsAndStores.module.css     | 20 +++++++++++++++++---
+ .../src/app/(protected)/chains-and-stores/page.tsx   | 18 ++++++++----------
+ 2 files changed, 25 insertions(+), 13 deletions(-)
+
+commit 018edcbefdd3c0cb598c8f2bb64371b1c3d8cf03
+Author: bnbinder 
+Date:   Sat Nov 22 18:18:45 2025 -0500
+
+    admin chain cards
+
+ .../src/app/(protected)/chains-and-stores/page.tsx | 96 ++++++++++++++++++++++
+ 1 file changed, 96 insertions(+)
+
+commit 78b94110bfa2fa3fdbeed8f88c374e2149c384df
+Merge: 257cd79 34c8913
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Sat Nov 22 18:17:34 2025 -0500
+
+    Merge pull request #6 from bnbinder/sign-out
+    
+    Sign out
+
+commit f0aa56cb30e30c4aa490e689da29afc7cd5eab95
+Author: bnbinder 
+Date:   Sat Nov 22 17:33:46 2025 -0500
+
+    done
+
+ .../src/app/(protected)/chains-and-stores/page.tsx |  7 ++++++-
+ shopcomp/src/app/api/admin/admin-chains.ts         | 22 ++++++++++++++++++++++
+ 2 files changed, 28 insertions(+), 1 deletion(-)
+
+commit 34c8913d18002d3b861afee0ee02f88cd5acc89d
+Author: codeitfast 
+Date:   Sat Nov 22 17:24:41 2025 -0500
+
+    removed router for main page
+
+ shopcomp/src/app/page.tsx | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 21c2dec451cc26d4690d8e730e83368bda1ffaeb
+Merge: b67cd67 257cd79
+Author: codeitfast 
+Date:   Sat Nov 22 17:24:12 2025 -0500
+
+    Merge branch 'main' into sign-out
+
+commit 257cd79e01c4813a16337bf2af36fe0f59f71316
+Merge: f5946e6 9471001
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Sat Nov 22 17:07:07 2025 -0500
+
+    Merge pull request #5 from bnbinder/admin-signin
+    
+    Admin signin
+
+commit 9471001098d3543ff4702f41154f1e09122d8c77
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 15:19:40 2025 -0500
+
+    feat: admin sign in and possible to check in every component using hook use useRoles
+
+ shopcomp/src/app/(protected)/chains-and-stores/page.tsx | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+
+commit dd9aed91e79eaf5d416be9b74f98e54e1b8805e0
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 15:07:02 2025 -0500
+
+    incorporate sign out branch from codeitfast
+
+ shopcomp/auth/auth.ts                 | 16 ++++++++++++++++
+ shopcomp/components/LandingPage.tsx   | 29 ++++++++++++++++++++++++++++
+ shopcomp/components/LoadingScreen.tsx |  8 ++++++++
+ shopcomp/components/Navbar.tsx        | 18 ++++++++++++------
+ shopcomp/hooks/useAuthCleanup.ts      | 10 ++++++++++
+ shopcomp/src/app/page.tsx             | 36 ++++++++---------------------------
+ 6 files changed, 83 insertions(+), 34 deletions(-)
+
+commit 3ea542aef38beaa98daf7a8bcb4c0fa75d121da4
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 12:26:05 2025 -0500
+
+    feat: add (protected) folder to require log in for children pages
+
+ .../chains-and-stores/ChainsAndStores.module.css   |  0
+ .../{ => (protected)}/chains-and-stores/page.tsx   |  6 +--
+ shopcomp/src/app/(protected)/layout.tsx            | 44 ++++++++++++++++++++++
+ 3 files changed, 47 insertions(+), 3 deletions(-)
+
+commit 4b0aa53b615446531ac6faff9b20267d7579e6af
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 12:18:05 2025 -0500
+
+    fix: user accesses homepage with wrong cache now gets redirected to sign in page
+
+ shopcomp/components/HomePage.tsx | 30 +++++++++++++++++++++++
+ shopcomp/src/app/page.tsx        | 51 +++++++++++++++++++++++-----------------
+ 2 files changed, 59 insertions(+), 22 deletions(-)
+
+commit be66bc4dedf5e8351f5fe7299628ad6ce3b78616
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 12:02:15 2025 -0500
+
+    feat: remove code and state query parameter after confirming with local storage
+
+ shopcomp/out.zip                            | Bin 498458 -> 0 bytes
+ shopcomp/src/app/auth/auth.tsx              |   9 ++++++++-
+ shopcomp/src/app/chains-and-stores/page.tsx |   2 +-
+ shopcomp/src/app/page.tsx                   |   6 +++++-
+ 4 files changed, 14 insertions(+), 3 deletions(-)
+
+commit 13d4db907e98fdfcb82324f0262870a13cecde70
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Sat Nov 22 11:39:32 2025 -0500
+
+    refactor auth variable, not passing auth around, but use auth directly; homepage info reflects admin and non-admin
+
+ shopcomp/components/Navbar.tsx |    9 +-
+ shopcomp/hooks/useRoles.ts     |   41 +
+ shopcomp/models/navbar.tsx     |   42 +-
+ shopcomp/package-lock.json     | 4299 ++++++++++++++++++++++++++++++++--------
+ shopcomp/package.json          |    3 +
+ shopcomp/src/app/page.tsx      |    4 +-
+ 6 files changed, 3517 insertions(+), 881 deletions(-)
+
+commit b67cd6765cf582b68f93e168634986dde84cb874
+Author: codeitfast 
+Date:   Fri Nov 21 13:26:27 2025 -0500
+
+    hash generator
+
+ hash_generator.py | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+commit c7ee0900cb003c40fb271dd258b45b90da85fd8c
+Author: codeitfast 
+Date:   Fri Nov 21 11:14:45 2025 -0500
+
+    navbar route fixing
+
+ shopcomp/components/Navbar.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2681fcfe5b9bcf760ef346d852804e32d6d4b4b7
+Author: codeitfast 
+Date:   Thu Nov 20 21:00:50 2025 -0500
+
+    new log-out functionality
+
+ shopcomp/src/app/api/routing/logout.ts | 15 +++++++--------
+ shopcomp/src/app/page.tsx              |  5 +++--
+ 2 files changed, 10 insertions(+), 10 deletions(-)
+
+commit b01f0bf19f28c7ce42ed0e653778060188465c22
+Author: codeitfast 
+Date:   Thu Nov 20 19:12:36 2025 -0500
+
+    basic logout redirect
+
+ shopcomp/models/interfaces.ts               | 22 ++++++++++++++++++++++
+ shopcomp/models/navbar.tsx                  |  1 +
+ shopcomp/src/app/api/routing/logout.ts      | 10 ++++++++++
+ shopcomp/src/app/chains-and-stores/page.tsx | 27 +--------------------------
+ shopcomp/src/app/page.tsx                   |  3 ++-
+ 5 files changed, 36 insertions(+), 27 deletions(-)
+
+commit 96a62e46b54d1084ab2fd7824e64329a91663587
+Author: codeitfast 
+Date:   Thu Nov 20 13:18:15 2025 -0500
+
+    changed output and zipped
+
+ .DS_Store               | Bin 0 -> 6148 bytes
+ shopcomp/next.config.ts |   1 +
+ shopcomp/out.zip        | Bin 0 -> 498458 bytes
+ 3 files changed, 1 insertion(+)
+
+commit 55b7d63eee2f120747a1e09d7f3129f79033b6e3
+Author: codeitfast 
+Date:   Wed Nov 19 18:59:55 2025 -0500
+
+    auth and logout functionality
+
+ shopcomp/components/Navbar.tsx              | 15 +++++++++++----
+ shopcomp/src/app/chains-and-stores/page.tsx |  4 +++-
+ shopcomp/src/app/page.tsx                   |  2 +-
+ 3 files changed, 15 insertions(+), 6 deletions(-)
+
+commit 6b1a96b21602a75d8cd0b381fbbdb865d1cb9c35
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Wed Nov 19 16:30:26 2025 -0500
+
+    refactor shopper chains and stores page
+
+ shopcomp/components/Navbar.module.css        |  67 +++++++++++
+ shopcomp/components/Navbar.tsx               |  45 ++++++++
+ shopcomp/src/app/chains-and-stores/page.tsx  | 162 ++++++++++++++-------------
+ shopcomp/src/app/chains-and-stores/page1.tsx |  37 ------
+ shopcomp/src/app/page.tsx                    |  38 +++----
+ 5 files changed, 211 insertions(+), 138 deletions(-)
+
+commit 8c03916fdcce527f4620ca23d9a1a093b0f37538
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Wed Nov 19 15:46:35 2025 -0500
+
+    refactor shopper chains and stores page
+
+ .../chains-and-stores/ChainsAndStores.module.css   | 257 ++++++++++++++++++
+ shopcomp/src/app/chains-and-stores/page.tsx        | 287 +++++++++++++++++++--
+ shopcomp/src/app/chains-and-stores/page1.tsx       |  37 +++
+ 3 files changed, 557 insertions(+), 24 deletions(-)
+
+commit f5946e6cc9c89592d33a9b0e8e7ee5c193a3aae0
+Author: codeitfast 
+Date:   Wed Nov 19 10:15:49 2025 -0500
+
+    renamed crete-chain to add-chain
+
+ shopcomp/src/app/api/shopper/create-chain.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit da511c53facfcc6e4d485f869a58b335954de3b8
+Author: codeitfast 
+Date:   Tue Nov 18 21:31:22 2025 -0500
+
+    basic website, create-chain still slightly broken
+
+ shopcomp/src/app/api/shopper/create-chain.ts | 30 +++++++++++++---------
+ shopcomp/src/app/chains-and-stores/page.tsx  | 37 ++++++++++++++++++++++++++++
+ shopcomp/src/app/page.tsx                    | 15 ++---------
+ 3 files changed, 57 insertions(+), 25 deletions(-)
+
+commit 52122c4a16497a7495e0907f329ae09cce707695
+Author: codeitfast 
+Date:   Tue Nov 18 21:19:23 2025 -0500
+
+    basic homepage made
+
+ shopcomp/models/navbar.tsx       |  25 +++++--
+ shopcomp/src/app/globals.css     |  42 ------------
+ shopcomp/src/app/layout.tsx      |   2 -
+ shopcomp/src/app/page.module.css | 141 ---------------------------------------
+ shopcomp/src/app/page.tsx        |  10 +--
+ 5 files changed, 26 insertions(+), 194 deletions(-)
+
+commit 285ede9be46cfaf79e7655405bf926e0f37aab20
+Author: codeitfast 
+Date:   Tue Nov 18 21:10:58 2025 -0500
+
+    basic axios functionality
+
+ shopcomp/models/navbar.tsx          |  5 ++++
+ shopcomp/package-lock.json          | 56 ++++++++++++++++++++++++++++++++++++-
+ shopcomp/package.json               |  3 +-
+ shopcomp/src/app/layout.tsx         |  2 ++
+ shopcomp/src/app/page.tsx           |  8 +++---
+ shopcomp/src/app/test-page/page.tsx |  3 ++
+ 6 files changed, 71 insertions(+), 6 deletions(-)
+
+commit 1c21bd3b28c306ead5e34dcb5a0c8d059dfb7b1f
+Author: codeitfast 
+Date:   Tue Nov 18 20:04:52 2025 -0500
+
+    load chains
+
+ shopcomp/src/app/api/axios.ts               |  4 ++--
+ shopcomp/src/app/api/shopper/list-chains.ts | 26 +++++++++++++-------------
+ shopcomp/src/app/page.tsx                   | 13 +++++++++++++
+ 3 files changed, 28 insertions(+), 15 deletions(-)
+
+commit f8fa7f3d63d16798f88974597832a9f79270ef0d
+Merge: 9b2cf54 640adb4
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Tue Nov 18 19:11:51 2025 -0500
+
+    Merge pull request #4 from bnbinder/authentication
+    
+    Authentication
+
+commit 640adb4ac92aeef358e9cd4e82a02aaef8f91144
+Merge: eaddb2c 9b2cf54
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Tue Nov 18 19:11:40 2025 -0500
+
+    Merge branch 'main' into authentication
+
+commit eaddb2c3b335925686d569679eb542862c327dbc
+Author: codeitfast 
+Date:   Tue Nov 18 18:14:38 2025 -0500
+
+    bug patch
+
+ shopcomp/src/app/page.tsx | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 9b2cf540492b25f0f1f5b7588c53c69f127c8812
+Author: bnbinder 
+Date:   Tue Nov 18 18:05:55 2025 -0500
+
+    organize
+
+ .../app/api/{ => shopper}/chain-create-store.ts    |   2 +-
+ .../src/app/api/{ => shopper}/chain-list-stores.ts |   2 +-
+ shopcomp/src/app/api/{ => shopper}/create-chain.ts |   2 +-
+ .../api/{ => shopper}/create-shopping-list-item.ts |   2 +-
+ .../app/api/{ => shopper}/create-shopping-list.ts  |   2 +-
+ shopcomp/src/app/api/{ => shopper}/get-stores.ts   |   2 +-
+ shopcomp/src/app/api/{ => shopper}/list-chains.ts  |   2 +-
+ .../api/{ => shopper}/remove-from-shopping-list.ts |   2 +-
+ .../src/app/api/{ => shopper}/review-activity.ts   |   2 +-
+ .../src/app/api/{ => shopper}/review-history.ts    |   2 +-
+ .../src/app/api/{ => shopper}/search-purchases.ts  |   2 +-
+ .../app/api/{ => shopper}/shopping-list-options.ts |   2 +-
+ .../src/app/api/{ => shopper}/submit-receipt.ts    |   2 +-
+ shopcomp/src/app/page.tsx                          | 172 +++++++++++++--------
+ 14 files changed, 118 insertions(+), 80 deletions(-)
+
+commit 0bf3b67471ec0990a39529c021ca27f8428dea55
+Author: codeitfast 
+Date:   Tue Nov 18 16:21:28 2025 -0500
+
+    very basic auth working on local
+
+ shopcomp/.gitignore            |   2 +
+ shopcomp/package-lock.json     |  38 ++++++++++++++-
+ shopcomp/package.json          |   4 +-
+ shopcomp/src/app/auth/auth.tsx |  26 ++++++++++
+ shopcomp/src/app/layout.tsx    |   3 ++
+ shopcomp/src/app/page.tsx      | 107 ++++++++++++++---------------------------
+ 6 files changed, 106 insertions(+), 74 deletions(-)
+
+commit 325ac57cbc9dfd9d9b3a5f3334e0d97577a8f322
+Author: bnbinder 
+Date:   Tue Nov 18 11:21:08 2025 -0500
+
+    finalize stubs
+
+ shopcomp/src/app/api/chain-create-store.ts        |  4 +++-
+ shopcomp/src/app/api/chain-list-stores.ts         | 20 +++++++++++---------
+ shopcomp/src/app/api/create-chain.ts              |  9 ++++++---
+ shopcomp/src/app/api/create-shopping-list-item.ts | 17 ++++++++++-------
+ shopcomp/src/app/api/create-shopping-list.ts      |  9 ++++++---
+ shopcomp/src/app/api/get-stores.ts                | 10 ++++++----
+ shopcomp/src/app/api/list-chains.ts               | 17 ++++++++++-------
+ shopcomp/src/app/api/remove-from-shopping-list.ts |  7 +++++--
+ shopcomp/src/app/api/review-history.ts            | 10 ++++++----
+ shopcomp/src/app/api/search-purchases.ts          |  9 +++++----
+ shopcomp/src/app/api/shopping-list-options.ts     |  9 +++++----
+ shopcomp/src/app/api/submit-receipt.ts            |  5 ++++-
+ 12 files changed, 77 insertions(+), 49 deletions(-)
+
+commit fe0c3cec4c920f9cf337103f16239e673540df1d
+Author: bnbinder 
+Date:   Tue Nov 18 11:09:07 2025 -0500
+
+    get json parts from parser
+
+ shopcomp/src/app/page.tsx | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+commit b305a95a7b3a5b13828d5112a3be0a358004466c
+Author: bnbinder 
+Date:   Tue Nov 18 10:58:15 2025 -0500
+
+    test api call
+
+ shopcomp/src/app/api/axios.ts            |  4 ++--
+ shopcomp/src/app/api/review-activity.ts  | 12 +++++++++---
+ shopcomp/src/app/api/search-purchases.ts |  4 ++--
+ shopcomp/src/app/page.tsx                |  4 ++++
+ 4 files changed, 17 insertions(+), 7 deletions(-)
+
+commit 1c34704192e7876c90cc5b525a2b0c32364d1060
+Author: bnbinder 
+Date:   Tue Nov 18 10:31:39 2025 -0500
+
+    all api stubs except for admin
+    
+    admin is just login logout + some odd functions that once we finish main implementation should be easy to get done
+
+ shopcomp/src/app/api/chain-create-store.ts        | 20 +++++++++++++++
+ shopcomp/src/app/api/chain-list-stores.ts         | 21 +++++++++++++++
+ shopcomp/src/app/api/create-chain.ts              | 20 +++++++++++++++
+ shopcomp/src/app/api/create-shopping-list-item.ts | 25 ++++++++++++++++++
+ shopcomp/src/app/api/create-shopping-list.ts      | 18 +++++++++++++
+ shopcomp/src/app/api/get-stores.ts                | 13 +++++-----
+ shopcomp/src/app/api/list-chains.ts               | 13 +++++-----
+ shopcomp/src/app/api/remove-from-shopping-list.ts | 19 ++++++++++++++
+ shopcomp/src/app/api/review-activity.ts           | 13 +++++-----
+ shopcomp/src/app/api/review-history.ts            | 13 +++++-----
+ shopcomp/src/app/api/search-purchases.ts          | 23 ++++++++++-------
+ shopcomp/src/app/api/shopping-list-options.ts     | 31 +++++++++++++++++++++++
+ shopcomp/src/app/api/submit-receipt.ts            | 13 +++++-----
+ 13 files changed, 199 insertions(+), 43 deletions(-)
+
+commit 84e96abad3df1f1bb6f5c8df0755378d6ac5d5db
+Author: bnbinder 
+Date:   Mon Nov 17 20:49:01 2025 -0500
+
+    api stubs
+
+ shopcomp/src/app/api/axios.ts            |  4 ++--
+ shopcomp/src/app/api/get-stores.ts       | 21 +++++++++++++++++++++
+ shopcomp/src/app/api/list-chains.ts      | 30 +++++++++++++++---------------
+ shopcomp/src/app/api/review-activity.ts  | 14 ++++++++++++++
+ shopcomp/src/app/api/review-history.ts   | 18 ++++++++++++++++++
+ shopcomp/src/app/api/search-purchases.ts | 19 +++++++++++++++++++
+ shopcomp/src/app/api/submit-receipt.ts   | 29 +++++++++++++++++++++++++++++
+ 7 files changed, 118 insertions(+), 17 deletions(-)
+
+commit beb3e204eee1da780f7046e9a69edbf9d3440e2a
+Author: codeitfast 
+Date:   Sun Nov 16 18:31:35 2025 -0500
+
+    basic stub
+
+ shopcomp/package-lock.json          | 154 ++++++++++++++++++++++++++++++++----
+ shopcomp/package.json               |  12 +--
+ shopcomp/src/app/api/axios.ts       |  11 +++
+ shopcomp/src/app/api/get-stores.ts  |   0
+ shopcomp/src/app/api/list-chains.ts |  20 +++++
+ 5 files changed, 177 insertions(+), 20 deletions(-)
+
+commit 7e9ce9b898732726509383e3bf162ec759c6111e
+Author: codeitfast 
+Date:   Fri Oct 31 11:21:01 2025 -0400
+
+    adding next.js
+
+ shopcomp/.gitignore              |   41 +
+ shopcomp/README.md               |   36 +
+ shopcomp/eslint.config.mjs       |   18 +
+ shopcomp/next.config.ts          |    8 +
+ shopcomp/package-lock.json       | 5936 ++++++++++++++++++++++++++++++++++++++
+ shopcomp/package.json            |   25 +
+ shopcomp/public/file.svg         |    1 +
+ shopcomp/public/globe.svg        |    1 +
+ shopcomp/public/next.svg         |    1 +
+ shopcomp/public/vercel.svg       |    1 +
+ shopcomp/public/window.svg       |    1 +
+ shopcomp/src/app/favicon.ico     |  Bin 0 -> 25931 bytes
+ shopcomp/src/app/globals.css     |   42 +
+ shopcomp/src/app/layout.tsx      |   32 +
+ shopcomp/src/app/page.module.css |  141 +
+ shopcomp/src/app/page.tsx        |   66 +
+ shopcomp/tsconfig.json           |   34 +
+ 17 files changed, 6384 insertions(+)

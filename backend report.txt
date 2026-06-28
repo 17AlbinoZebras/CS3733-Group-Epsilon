@@ -1,0 +1,1537 @@
+commit e2155752d09f3f50bbdd4c3b760fc0a71e099307
+Merge: 8c2a382 c61559f
+Author: bnbinder 
+Date:   Thu Dec 11 13:12:59 2025 -0500
+
+    Merge pull request #44 from tdnguyen04/edit-shopping-list-item
+    
+    Edit shopping list item
+
+commit c61559f5e30eba811a768119fa0779ed9cf40c88
+Author: 17AlbinoZebras 
+Date:   Thu Dec 11 13:11:04 2025 -0500
+
+    fix: takes entryID from input now
+
+ lib/edit-shopping-list-entry/edit-shopping-list-entry.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9784d99e506c8903c08faaf1bacce50648e10f1f
+Author: 17AlbinoZebras 
+Date:   Wed Dec 10 18:57:40 2025 -0500
+
+    feat: edit shopping list entry
+
+ lib/edit-shopping-list-entry/config.mjs            |   6 +
+ .../edit-shopping-list-entry.mjs                   |  68 ++++++++++++
+ lib/edit-shopping-list-entry/package-lock.json     | 122 +++++++++++++++++++++
+ lib/edit-shopping-list-entry/package.json          |   8 ++
+ lib/shop-cdk2-stack.ts                             |   3 +
+ 5 files changed, 207 insertions(+)
+
+commit 8c2a38248cc7669e6cb6c442ab6b83424aa12321
+Merge: 6fbcab5 b232b4e
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 18:40:46 2025 -0500
+
+    Merge pull request #43 from tdnguyen04/shopping-list-pages
+    
+    Delete Shopping List (I changed into the wrong branch whoops)
+
+commit b232b4eb8bc6c294f6316b01edbd95a78106069a
+Author: 17AlbinoZebras 
+Date:   Wed Dec 10 18:37:44 2025 -0500
+
+    fix: include package.json
+
+ lib/delete-shopping-list/package.json | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 1e451c3640140902a4916435e89d75192d8c55c3
+Author: 17AlbinoZebras 
+Date:   Wed Dec 10 18:37:29 2025 -0500
+
+    feat: delete shopping list
+
+ lib/delete-shopping-list/config.mjs               |   6 +
+ lib/delete-shopping-list/delete-shopping-list.mjs |  61 +++
+ lib/delete-shopping-list/package-lock.json        | 108 +++++
+ lib/shop-cdk2-stack.ts                            |   4 +
+ package-lock.json                                 | 505 +++++++++++++++++++++-
+ package.json                                      |   3 +-
+ 6 files changed, 665 insertions(+), 22 deletions(-)
+
+commit 6fbcab5c5917d681419b72cef0a0f0cbfaeeba95
+Author: codeitfast 
+Date:   Wed Dec 10 18:10:43 2025 -0500
+
+    bug: admin should have access to all chains, including deleted ones.
+
+ lib/admin-chains/admin-chains.mjs | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit c7aa980ff490c5e6073b612acda77f54c0e34575
+Merge: 4dd1596 063a7ab
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 14:28:09 2025 -0500
+
+    Merge pull request #42 from tdnguyen04/admin-chains-bug
+    
+    fix: update the SQL command to return the chain sales column and won'…
+
+commit 4dd159630b19f3eac23644b11ef55e8a6762b78a
+Merge: c80c95c 831d930
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 14:27:42 2025 -0500
+
+    Merge pull request #41 from tdnguyen04/report-options-bug-patch
+    
+    report options now works for case-insensitive
+
+commit 063a7abcad222eb17905817e25bbc0d457ec207d
+Author: tdnguyen04 
+Date:   Wed Dec 10 14:26:45 2025 -0500
+
+    fix: update the SQL command to return the chain sales column and won't return deleted chains
+
+ lib/admin-chains/admin-chains.mjs | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+
+commit 831d930fd6c3c2f7cf80ec7e06c4a1960292c08e
+Author: codeitfast 
+Date:   Wed Dec 10 13:51:58 2025 -0500
+
+    report options now works for case-insensitive
+
+ lib/report-shopping-list-options/report-shopping-list-options.mjs | 4 ++--
+ lib/submit-receipt/submit-receipt.mjs                             | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit c80c95ce7c8fbdb7b419c4c20fe317abbfdf19ce
+Merge: 04fd614 bd2fc1f
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 13:27:31 2025 -0500
+
+    Merge pull request #40 from tdnguyen04/fix-review-history
+    
+    fix: change store name to chain name + store name
+
+commit 04fd6140aea9052cc91bbbd90988903ba55c8e1c
+Merge: 9b6d893 9bac48b
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Wed Dec 10 13:27:13 2025 -0500
+
+    Merge pull request #39 from tdnguyen04/bug-patch-admin
+    
+    admin bug patches
+
+commit bd2fc1ff98d953047ca00162f5bd11af8e2f88f4
+Author: bnbinder 
+Date:   Wed Dec 10 13:16:16 2025 -0500
+
+    fix: change store name to chain name + store name
+    
+    makes more snese
+
+ lib/review-history/review-history.mjs | 111 +++++++++++++++++-----------------
+ 1 file changed, 57 insertions(+), 54 deletions(-)
+
+commit 9bac48bc484ff23441ccca7ffccbb8aee31b2b20
+Author: codeitfast 
+Date:   Tue Dec 9 21:18:59 2025 -0500
+
+    admin bug patches
+
+ lib/admin-stores/config.mjs           |  4 ++--
+ lib/list-chains/list-chains.mjs       |  2 +-
+ lib/list-stores/list-stores.mjs       |  2 +-
+ lib/submit-receipt/submit-receipt.mjs | 17 ++++++++++++++++-
+ 4 files changed, 20 insertions(+), 5 deletions(-)
+
+commit 9b6d893210f3dcdf4ebe9aac9d76ab6d447335db
+Merge: 9b1f008 99fb319
+Author: bnbinder 
+Date:   Tue Dec 9 19:24:43 2025 -0500
+
+    Merge pull request #38 from tdnguyen04/submit-receipt-ben
+    
+    feat: date time
+
+commit 99fb319113f7fd65fef72ddd90674bf44378cdcc
+Author: bnbinder 
+Date:   Tue Dec 9 19:01:22 2025 -0500
+
+    feat: date time
+    
+    look at commit for front end but if null auto make date if not then pass date basic stuff
+
+ lib/submit-receipt/submit-receipt.mjs | 22 ++++++++++++++++------
+ 1 file changed, 16 insertions(+), 6 deletions(-)
+
+commit 9b1f00820e15f8541489ee55840b61b2fd94ffc5
+Merge: de6c84b 3f6ee11
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Tue Dec 9 18:06:31 2025 -0500
+
+    Merge pull request #37 from tdnguyen04/fix-create-shopping-list
+    
+    Fix create shopping list
+
+commit 3f6ee11c932af32dda8a687a09db05a5622695d7
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:46:53 2025 -0500
+
+    fix: create shopping list now just returns the new list
+
+ lib/add-to-shopping-list/add-to-shopping-list.mjs | 3 ---
+ lib/create-shopping-list/create-shopping-list.mjs | 8 ++++----
+ 2 files changed, 4 insertions(+), 7 deletions(-)
+
+commit 37eb738bd7a64d95ffb231b3293e11e5cae1bfc1
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:35:37 2025 -0500
+
+    fix: create-shopping-list now returns only the current shopper's lists; update add-to-shopping-list
+
+ lib/add-to-shopping-list/add-to-shopping-list.mjs | 4 +++-
+ lib/create-shopping-list/create-shopping-list.mjs | 9 ++++-----
+ 2 files changed, 7 insertions(+), 6 deletions(-)
+
+commit de6c84bfa38e3ec0a7e039a29278bae772d204fd
+Merge: c20a105 1e2f348
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 9 15:59:06 2025 -0500
+
+    Merge pull request #36 from tdnguyen04/report-options-for-shopping-list
+    
+    Update: Now disregards items from stores that have been deleted
+
+commit 1e2f348203da4027ae2258536c9565e46443fb4b
+Author: 17AlbinoZebras 
+Date:   Mon Dec 8 21:49:13 2025 -0500
+
+    Update: Now disregards items from stores that have been deleted
+
+ .../report-shopping-list-options.mjs               | 22 +++++++++++++++++-----
+ 1 file changed, 17 insertions(+), 5 deletions(-)
+
+commit c20a105c912bc0fa9bb2e5aca0a4237423817061
+Author: codeitfast 
+Date:   Mon Dec 8 18:47:09 2025 -0500
+
+    bug: search-recent-purchases works for empty searches
+
+ lib/search-recent-purchases/search-recent-purchases.mjs | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+
+commit e43e0121147fabcf4fc9e973c2e2b8b4e79b72a9
+Merge: a3ab94b d36c4a1
+Author: tdnguyen04 
+Date:   Mon Dec 8 13:34:48 2025 -0500
+
+    merge: search recent purchases to development
+
+commit d36c4a11e75890f18421207e51107edcb9aff15b
+Author: tdnguyen04 
+Date:   Mon Dec 8 13:28:08 2025 -0500
+
+    feat: finish lambda function with case-insensitive search
+
+ .../search-recent-purchases.mjs                    | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+commit a3ab94b9645180012f0b08a1ec6e197ae2ce21c7
+Merge: d4b2ebd 793bead
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Dec 8 13:10:05 2025 -0500
+
+    Merge pull request #34 from tdnguyen04/report-options-for-shopping-list
+    
+    Report options for shopping list
+
+commit d4b2ebd4a9bcf5a96673e26dd8f7bdda69ead54f
+Merge: e280ef0 9cfdbd4
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Dec 8 13:09:50 2025 -0500
+
+    Merge pull request #30 from tdnguyen04/remove-store-bug-patch
+    
+    list-all-stores now only shows where deleted = 0
+
+commit 793bead100217059e98a26f0bc2d0246a6dfeebd
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 18:10:44 2025 -0500
+
+    add numResults to shop-cdk2-stack
+
+ lib/shop-cdk2-stack.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fc3dedb353eb71a77197b6bf2c7d963e27fde9b7
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 15:45:28 2025 -0500
+
+    fix: copy and paste error
+
+ lib/report-shopping-list-options/report-shopping-list-options.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 775282781431b70fa27dca2b09e032bec0b1763c
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 15:43:21 2025 -0500
+
+    fix: I once again forgot to include package.json whoopsies
+
+ lib/report-shopping-list-options/package.json | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit ba3fa34de1d8f2cd8520859b0c1a5a9c83c595d4
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 15:42:11 2025 -0500
+
+    feat: can give number of results desired (can request top x number of best deals)
+
+ lib/report-shopping-list-options/report-shopping-list-options.mjs | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 57cee072105c98eca1961641d732441cb7776665
+Author: 17AlbinoZebras 
+Date:   Sun Dec 7 13:08:08 2025 -0500
+
+    feat: find the best price option for each entry in a given shopping list for which we have price data
+
+ lib/report-shopping-list-options/config.mjs        |   6 ++
+ lib/report-shopping-list-options/package-lock.json | 108 +++++++++++++++++++++
+ .../report-shopping-list-options.mjs               | 108 +++++++++++++++++++++
+ lib/shop-cdk2-stack.ts                             |   3 +
+ 4 files changed, 225 insertions(+)
+
+commit e280ef02dc1504907e6845e91141ecf428f10287
+Merge: 9c2a824 60c4f59
+Author: tdnguyen04 
+Date:   Sun Dec 7 11:21:32 2025 -0500
+
+    Merge branch 'development' of https://github.com/tdnguyen04/shopcomp-backend into development
+
+commit 9c2a824edc64a3173e0f7dfdd25b6d2147f5766e
+Merge: ed2a26c 6e0fffc
+Author: tdnguyen04 
+Date:   Sun Dec 7 11:21:07 2025 -0500
+
+    merge review-activity to development
+
+commit 7f3362a743173148490fcf0f902966e9b79a8971
+Author: tdnguyen04 
+Date:   Sun Dec 7 11:16:47 2025 -0500
+
+    first commit: untested code
+
+ lib/search-recent-purchases/config.mjs             |   6 ++
+ lib/search-recent-purchases/package-lock.json      | 108 +++++++++++++++++++++
+ lib/search-recent-purchases/package.json           |   9 ++
+ .../search-recent-purchases.mjs                    |  71 ++++++++++++++
+ lib/shop-cdk2-stack.ts                             |   6 +-
+ 5 files changed, 199 insertions(+), 1 deletion(-)
+
+commit 60c4f59651446e7bd97e6be497a8174f48962c48
+Merge: ed2a26c e31ca5f
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sun Dec 7 11:07:15 2025 -0500
+
+    Merge pull request #32 from tdnguyen04/get-shopping-lists-and-entries
+    
+    Get shopping lists and entries
+
+commit e31ca5f9f358abdbd2f8b8495853ab53984da244
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 20:20:47 2025 -0500
+
+    fix: add lambda function to shop-cdk2-stack
+
+ .../get-shopping-lists-and-entries.mjs                 | 18 +++---------------
+ lib/shop-cdk2-stack.ts                                 |  3 +++
+ 2 files changed, 6 insertions(+), 15 deletions(-)
+
+commit a38a33947936da71f3b0321fc29930c651b1ca90
+Merge: f2c9f3c ed2a26c
+Author: codeitfast 
+Date:   Sat Dec 6 20:05:31 2025 -0500
+
+    Merge branch 'development' into get-shopping-lists-and-entries
+
+commit f2c9f3ce2f3c92cf53c33d122bfd0768ab1557b8
+Merge: c0b50ae d80ebf0
+Author: codeitfast 
+Date:   Sat Dec 6 20:05:07 2025 -0500
+
+    Merge branch 'development' into get-shopping-lists-and-entries
+
+commit ed2a26c95444ae49b3eb40fd5266192a06dd0468
+Merge: d80ebf0 2c00b62
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Sat Dec 6 20:03:40 2025 -0500
+
+    Merge pull request #31 from tdnguyen04/fix-create-and-add-to-shopping-list
+    
+    fix: create-shopping-list now returns only the current shopper's list…
+
+commit c0b50aeccf9643d909ac21ea50796fce641eec6c
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:55:13 2025 -0500
+
+    rename file to get-shopping-lists-and-entries
+
+ .../{get-shopping-list-entries.mjs => get-shopping-lists-and-entries.mjs} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0d150655380598213e969a70a2f4cd345895b8d4
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:54:00 2025 -0500
+
+    feat: get all shopping lists and shopping list entries for a given shopper
+
+ lib/get-shopping-lists-and-entries/config.mjs      |   6 ++
+ .../get-shopping-list-entries.mjs                  |  69 +++++++++++++
+ .../package-lock.json                              | 108 +++++++++++++++++++++
+ lib/get-shopping-lists-and-entries/package.json    |   8 ++
+ lib/get-shopping-lists/get-shopping-lists.mjs      |   2 +-
+ 5 files changed, 192 insertions(+), 1 deletion(-)
+
+commit 2c00b62fc666580f5856ea74ac8e6a7657be82e4
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:46:53 2025 -0500
+
+    fix: create shopping list now just returns the new list
+
+ lib/add-to-shopping-list/add-to-shopping-list.mjs | 3 ---
+ lib/create-shopping-list/create-shopping-list.mjs | 8 ++++----
+ 2 files changed, 4 insertions(+), 7 deletions(-)
+
+commit 40f9a9eb63d9041de252c46156c0af74284b6238
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 19:35:37 2025 -0500
+
+    fix: create-shopping-list now returns only the current shopper's lists; update add-to-shopping-list
+
+ lib/add-to-shopping-list/add-to-shopping-list.mjs | 4 +++-
+ lib/create-shopping-list/create-shopping-list.mjs | 9 ++++-----
+ 2 files changed, 7 insertions(+), 6 deletions(-)
+
+commit 6e0fffcdd979a30cdaa0553d00f8f4c95bab47e7
+Author: bnbinder 
+Date:   Sat Dec 6 19:34:38 2025 -0500
+
+    feat: review activity
+
+ lib/review-activity/config.mjs          |   6 +
+ lib/review-activity/package-lock.json   | 110 +++++++
+ lib/review-activity/package.json        |   9 +
+ lib/review-activity/review-activity.mjs |  72 +++++
+ lib/shop-cdk2-stack.ts                  | 496 ++++++++++++++++----------------
+ 5 files changed, 447 insertions(+), 246 deletions(-)
+
+commit 9cfdbd4e3bb7c6ee020b8269dbcfd1210b17dd7b
+Author: codeitfast 
+Date:   Sat Dec 6 18:57:21 2025 -0500
+
+    list-all-stores now only shows where deleted = 0
+
+ lib/list-all-stores/list-all-stores.mjs | 2 +-
+ lib/list-stores/list-stores.mjs         | 2 +-
+ lib/remove-store/remove-store.mjs       | 5 +++--
+ 3 files changed, 5 insertions(+), 4 deletions(-)
+
+commit d80ebf02690c1a28c9d8e5ad6ff063d38e1915d9
+Merge: d1d2af1 5ca517f
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Sat Dec 6 18:24:33 2025 -0500
+
+    Merge pull request #29 from tdnguyen04/remove-shopping-list-entry
+    
+    fix: forgot to include package.json whoops
+
+commit d1d2af12d66d1ad597bbcc391abf73fc2feb64c5
+Author: codeitfast 
+Date:   Sat Dec 6 18:21:24 2025 -0500
+
+    bug: chain_id -> store_id
+
+ lib/remove-store/remove-store.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5ca517ff73d61ae4675fc73bc086a545a7f59f0c
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 18:18:42 2025 -0500
+
+    fix: forgot to include package.json whoops
+
+ lib/remove-from-shopping-list/package.json | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 036c9781c03f4a9592284fa9ff56b45c4648232b
+Merge: 8845acd eed48b5
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Dec 6 18:17:08 2025 -0500
+
+    Merge pull request #27 from tdnguyen04/remove-store
+    
+    Remove store
+
+commit 8845acdebbe671a759fc1ea97d70628530df8676
+Merge: 1b7633b f816052
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Dec 6 18:16:38 2025 -0500
+
+    Merge pull request #28 from tdnguyen04/remove-shopping-list-entry
+    
+    Remove given entry from given shopping list
+
+commit 1b7633b8ff1a17ec9147fcfd35952a09dd0c4f93
+Merge: 217dccc 309cc7b
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Dec 6 18:16:25 2025 -0500
+
+    Merge pull request #18 from tdnguyen04/register-shopper
+    
+    Register shopper
+
+commit f816052032dd68fe06dd2ad0563ef508c7bfefd8
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 18:14:31 2025 -0500
+
+    feat: remove given entry from given shopping list
+
+ lib/remove-from-shopping-list/config.mjs           |   6 ++
+ lib/remove-from-shopping-list/package-lock.json    | 108 +++++++++++++++++++++
+ .../remove-from-shopping-list.mjs                  |  61 ++++++++++++
+ lib/shop-cdk2-stack.ts                             |  15 +--
+ 4 files changed, 184 insertions(+), 6 deletions(-)
+
+commit 217dccca6cd52ecaf27714b23863f94cd8eef1d4
+Merge: 1175be6 91b4f21
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Sat Dec 6 18:08:36 2025 -0500
+
+    Merge pull request #26 from tdnguyen04/submit-receipt-ben
+    
+    fix: mysql already checks duplicate. Also, bug patch with returning receipts.
+
+commit 91b4f21da170f39dcecd952713cba98dda850d79
+Author: codeitfast 
+Date:   Sat Dec 6 18:07:45 2025 -0500
+
+    bug(getReceipts): only get receipt for shopper, not all receipts in DB
+
+ lib/submit-receipt/submit-receipt.mjs | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+commit 309cc7b8c9a82a385b907ae54a6627088c5fc070
+Merge: 86b88c2 1175be6
+Author: codeitfast 
+Date:   Sat Dec 6 17:50:58 2025 -0500
+
+    Merge branch 'development' into register-shopper
+
+commit eed48b51e8d949969a444af4c04ce26a681b4897
+Merge: b7c743d 1175be6
+Author: codeitfast 
+Date:   Sat Dec 6 17:47:35 2025 -0500
+
+    :erge branch 'development' into remove-store
+    
+    Finished merge
+
+commit b7c743d2811ae1ce6a941f4175c4423a29695f61
+Author: codeitfast 
+Date:   Sat Dec 6 17:47:14 2025 -0500
+
+    func(remove-store): prototype lambda function completed
+
+ lib/add-store/add-store.mjs        |   4 +-
+ lib/add-store/config.mjs           |   6 ---
+ lib/remove-chain/remove-chain.mjs  |   2 +-
+ lib/remove-store/config.mjs        |   6 +++
+ lib/remove-store/package-lock.json | 108 +++++++++++++++++++++++++++++++++++++
+ lib/remove-store/package.json      |   7 +++
+ lib/remove-store/remove-store.mjs  |  35 ++++++++++++
+ lib/shop-cdk2-stack.ts             |   3 ++
+ 8 files changed, 162 insertions(+), 9 deletions(-)
+
+commit 0460f5f47ff808d4127c507f91eac5d276f73bf5
+Author: bnbinder 
+Date:   Sat Dec 6 17:03:57 2025 -0500
+
+    fix: mysql already checks duplicate
+
+ lib/submit-receipt/submit-receipt.mjs | 19 ++++---------------
+ 1 file changed, 4 insertions(+), 15 deletions(-)
+
+commit 1175be66e86512f50814a253e761eec4cf341e6d
+Merge: 367a014 4213875
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Dec 6 16:11:04 2025 -0500
+
+    Merge pull request #25 from tdnguyen04/submit-receipt-ben
+    
+    fix: date now handled in lambda
+
+commit 4213875e1fcede06d9096d14ffb28c28e0e7e828
+Author: bnbinder 
+Date:   Sat Dec 6 13:28:52 2025 -0500
+
+    fix: date now handled in lambda
+
+ lib/submit-receipt/submit-receipt.mjs | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+commit e6dc06e73d10a9a3102f12c5dcc9aa457098d305
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 12:23:59 2025 -0500
+
+    feat: get all shopping list entries for the queried shopping list
+
+ lib/get-shopping-list-entries/config.mjs           |   6 ++
+ .../get-shopping-list-entries.mjs                  |  44 +++++++++
+ lib/get-shopping-list-entries/package-lock.json    | 108 +++++++++++++++++++++
+ lib/get-shopping-list-entries/package.json         |   8 ++
+ lib/shop-cdk2-stack.ts                             |   9 +-
+ 5 files changed, 172 insertions(+), 3 deletions(-)
+
+commit a0f73eafb7129c2d6f5816fef8894cc2df9d72a1
+Author: 17AlbinoZebras 
+Date:   Sat Dec 6 12:01:53 2025 -0500
+
+    feat: list all shopping lists belonging to the queried shopper
+
+ lib/get-shopping-lists/config.mjs             |   6 ++
+ lib/get-shopping-lists/get-shopping-lists.mjs |  44 +++++++++++
+ lib/get-shopping-lists/package-lock.json      | 108 ++++++++++++++++++++++++++
+ lib/get-shopping-lists/package.json           |   8 ++
+ lib/shop-cdk2-stack.ts                        |   5 ++
+ 5 files changed, 171 insertions(+)
+
+commit 367a01488bbd8ea63adf3078ae8c70c6bd13b3ff
+Merge: e81d0ac 7c4f5d7
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Fri Dec 5 18:31:35 2025 -0500
+
+    Merge pull request #22 from tdnguyen04/submit-receipt-ben
+    
+    Submit receipt ben
+
+commit e81d0acaf27d4295bb27269dcb14aee09206321d
+Merge: 4555283 f41a7f8
+Author: bnbinder 
+Date:   Fri Dec 5 15:23:07 2025 -0500
+
+    Merge pull request #21 from tdnguyen04/fix-review-history
+    
+    fix: change review history SQL to include all the details to prevent multiple round trip
+
+commit 7c4f5d7ae832f541a96bb5ce70742e8719fef1c8
+Author: bnbinder 
+Date:   Fri Dec 5 15:16:52 2025 -0500
+
+    fix: submit logic with ids
+
+ lib/submit-receipt/submit-receipt.mjs | 30 ++++++++++++++----------------
+ 1 file changed, 14 insertions(+), 16 deletions(-)
+
+commit 3be2348c443453a3416b6eb2106b66219e5304e0
+Author: bnbinder 
+Date:   Fri Dec 5 15:14:07 2025 -0500
+
+    fix: submit with uuid
+
+ lib/submit-receipt/submit-receipt.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f41a7f8b0b385d248d07748ebbaa2e98e787357b
+Author: tdnguyen04 
+Date:   Fri Dec 5 14:22:45 2025 -0500
+
+    fix: change review history SQL to include all the details to prevent multiple round trip
+
+ lib/review-history/review-history.mjs | 72 +++++++++++++++++++++++++++++++----
+ 1 file changed, 65 insertions(+), 7 deletions(-)
+
+commit 4555283c953f74b14b477f611386a8e3232feb49
+Merge: 10c0f61 f974ce4
+Author: tdnguyen04 
+Date:   Thu Dec 4 14:13:54 2025 -0500
+
+    merge: merge submit-receipt and list-stores to development
+
+commit f974ce40926af63d936d14e7939166277af7c7aa
+Author: bnbinder 
+Date:   Thu Dec 4 13:07:03 2025 -0500
+
+    fix: generate uuid in lambda function
+    
+    also fix package stuff
+
+ lib/submit-receipt/package-lock.json  | 15 ++++++++++++++-
+ lib/submit-receipt/package.json       |  8 ++++----
+ lib/submit-receipt/submit-receipt.mjs |  5 +++--
+ 3 files changed, 21 insertions(+), 7 deletions(-)
+
+commit ddb91468a1cb542853336b149fdc0d097f7ecdc2
+Author: bnbinder 
+Date:   Wed Dec 3 18:58:24 2025 -0500
+
+    oops part 2
+
+ lib/list-stores/list-stores.mjs | 2 +-
+ lib/shop-cdk2-stack.ts          | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 98266f31a1428b0800e4aad5a853745e73d8f0fa
+Author: bnbinder 
+Date:   Wed Dec 3 18:36:26 2025 -0500
+
+    oops
+
+ lib/submit-receipt/submit-receipt.mjs | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+commit 7aafdd1d09d9b44626f41b42b3df4a53bf0c560c
+Author: bnbinder 
+Date:   Wed Dec 3 18:35:36 2025 -0500
+
+    fix: wrong logic for duplicate receipt
+    
+    need to check insetad get receipts where uuid = ? and see if reuslt gets 1 or 0
+
+ lib/submit-receipt/submit-receipt.mjs | 32 ++++++++++++++++----------------
+ 1 file changed, 16 insertions(+), 16 deletions(-)
+
+commit b3e30bc13852a288e87631699bcbf84dff2baa6a
+Author: bnbinder 
+Date:   Wed Dec 3 18:31:33 2025 -0500
+
+    feat: add resource for list-store and change chainID to chain_id
+
+ lib/list-stores/list-stores.mjs | 2 +-
+ lib/shop-cdk2-stack.ts          | 3 +++
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 10c0f61f0e6b0aa53027fc7e5e8a2203c009b819
+Author: tdnguyen04 
+Date:   Wed Dec 3 18:31:04 2025 -0500
+
+    merge: merge register shopper into db
+
+ lib/register-shopper/config.mjs           |   6 ++
+ lib/register-shopper/package-lock.json    | 108 ++++++++++++++++++++++++++++++
+ lib/register-shopper/package.json         |   7 ++
+ lib/register-shopper/register-shopper.mjs |  35 ++++++++++
+ lib/shop-cdk2-stack.ts                    |  26 +++----
+ 5 files changed, 170 insertions(+), 12 deletions(-)
+
+commit 86b88c2ec2bac59a4a8d97c2690dd5af3537ba0e
+Author: codeitfast 
+Date:   Wed Dec 3 18:03:56 2025 -0500
+
+    bug(lambda): register-shopper mispelling
+
+ lib/shop-cdk2-stack.ts | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 4dfe2d12bea87cc1a8657957113bdcdf5338d29d
+Author: codeitfast 
+Date:   Wed Dec 3 18:00:29 2025 -0500
+
+    register shopper bug patch
+
+ lib/shop-cdk2-stack.ts | 18 +-----------------
+ 1 file changed, 1 insertion(+), 17 deletions(-)
+
+commit 82551938ca085c8e47858d5dacdc8ad27bbd6394
+Merge: 124c864 8870d92
+Author: tdnguyen04 
+Date:   Wed Dec 3 16:53:10 2025 -0500
+
+    merge: merge review history branch
+
+commit 124c8643154565e164284e02b31374e940fc5915
+Merge: fb8041a 1ed11b7
+Author: tdnguyen04 
+Date:   Wed Dec 3 16:35:28 2025 -0500
+
+    merge: merge feature to allow query parameter from query-parameter-refactor branch
+
+commit 0b20f5e1d1168e36be2d100d8c79824f6b403f94
+Merge: 2cb9946 fb8041a
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Wed Dec 3 14:52:32 2025 -0500
+
+    Merge branch 'development' into register-shopper
+
+commit 2cb99462f8db4b8ba9afed2366caccbc1a281a50
+Merge: ba9b1eb 08d01fd
+Author: codeitfast 
+Date:   Wed Dec 3 14:50:22 2025 -0500
+
+    Merge branch 'development' into register-shopper
+
+commit ba9b1eb0c445877dc1eb80d97c449770b83caca9
+Author: codeitfast 
+Date:   Wed Dec 3 14:38:24 2025 -0500
+
+    funct(labmda): register shopper lambda function
+
+ lib/register-shopper/config.mjs           |   6 ++
+ lib/register-shopper/package-lock.json    | 108 ++++++++++++++++++++++++++++++
+ lib/register-shopper/package.json         |   7 ++
+ lib/register-shopper/register-shopper.mjs |  35 ++++++++++
+ lib/shop-cdk2-stack.ts                    |   5 ++
+ 5 files changed, 161 insertions(+)
+
+commit fb8041ac7598fb58bf90c4517f1f474e501c9e67
+Merge: 23adcf4 9e86fbd
+Author: tdnguyen04 
+Date:   Wed Dec 3 13:46:56 2025 -0500
+
+    merge: merge Ben's submit receipt lambda function
+
+commit 23adcf4bc84f261b8ee80b8558a390c375866a34
+Merge: 08d01fd f584269
+Author: tdnguyen04 
+Date:   Wed Dec 3 13:35:50 2025 -0500
+
+    merge: merge add-to-shopping-list to development
+
+commit 8870d927f5e821ef72adb4d7e18ab117433f69a1
+Author: tdnguyen04 
+Date:   Wed Dec 3 12:58:06 2025 -0500
+
+    feat: add review history lambda function to get receipts from shopperID
+
+ lib/review-history/config.mjs         |   6 ++
+ lib/review-history/package-lock.json  | 108 ++++++++++++++++++++++++++++++++++
+ lib/review-history/package.json       |   9 +++
+ lib/review-history/review-history.mjs |  26 ++++++++
+ lib/shop-cdk2-stack.ts                |   4 +-
+ 5 files changed, 151 insertions(+), 2 deletions(-)
+
+commit 1ed11b70b432cdfa520dc3f0ddbfbfc06dc0e715
+Author: tdnguyen04 
+Date:   Wed Dec 3 12:22:27 2025 -0500
+
+    delete old cdk file
+
+ lib/shop-cdk-stack.ts | 284 --------------------------------------------------
+ 1 file changed, 284 deletions(-)
+
+commit cd361bdcc24c429bc4ebd699a6f229ee9022d94f
+Merge: 0b11503 01414bb cd8c9ec
+Author: tdnguyen04 
+Date:   Wed Dec 3 12:20:32 2025 -0500
+
+    merge: merge development to current branch
+
+commit 0b11503d0989edcc43fbddb38ba0c29078b46f8e
+Author: tdnguyen04 
+Date:   Wed Dec 3 11:36:22 2025 -0500
+
+    refactor: add query param options for addGetMethod and addPostMethod
+
+ lib/shop-cdk2-stack.ts | 59 ++++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 48 insertions(+), 11 deletions(-)
+
+commit 9e86fbdf9dea3a164c69d199ef7f393ecc34fa28
+Author: bnbinder 
+Date:   Wed Dec 3 02:13:26 2025 -0500
+
+    fix: this should work
+    
+    however, with foreign keys being needed, i need to manually add shopper id but im going to bed. will do in morning
+
+ lib/submit-receipt/submit-receipt.mjs | 56 +++++++++++++++++------------------
+ 1 file changed, 27 insertions(+), 29 deletions(-)
+
+commit 987d89db591a88e4ef16fe7aff59de8ce3abf711
+Author: bnbinder 
+Date:   Tue Dec 2 23:59:10 2025 -0500
+
+    fix: package stuff
+    
+    package stuff
+
+ lib/submit-receipt/package-lock.json | 89 +++++++++++++++++++++++++++++++++++-
+ lib/submit-receipt/package.json      |  6 ++-
+ 2 files changed, 91 insertions(+), 4 deletions(-)
+
+commit d3d20218fb6ec4b868ab119ad7c02fc5e6afc7a6
+Author: bnbinder 
+Date:   Tue Dec 2 23:41:52 2025 -0500
+
+    feat: update stack
+    
+    almost forgot
+
+ lib/shop-cdk2-stack.ts | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit 9f77027d2ca1e48c184a693f1054fbe52c2401c2
+Author: bnbinder 
+Date:   Tue Dec 2 23:38:22 2025 -0500
+
+    feat: first iteration of submit-receipt lambda function
+    
+    testing it rn to see if it works. pulled from recent development branch as well
+
+ lib/submit-receipt/config.mjs         |   6 ++
+ lib/submit-receipt/package-lock.json  |  12 ++++
+ lib/submit-receipt/package.json       |   7 +++
+ lib/submit-receipt/submit-receipt.mjs | 101 ++++++++++++++++++++++++++++++++++
+ 4 files changed, 126 insertions(+)
+
+commit 08d01fdcc4fed5790a27a354847079e34cc0dc99
+Merge: 3309523 11fdc79
+Author: codeitfast 
+Date:   Tue Dec 2 18:54:11 2025 -0500
+
+    Merge branch 'development' of https://github.com/tdnguyen04/shopcomp-backend into development
+
+commit 33095239af4b6a768742421db865c5458ab594cf
+Author: codeitfast 
+Date:   Tue Dec 2 18:48:18 2025 -0500
+
+    basic selectors changed
+
+ lib/list-stores/list-stores.mjs |  2 +-
+ lib/shop-cdk2-stack.ts          | 35 ++++++++++++++++++-----------------
+ 2 files changed, 19 insertions(+), 18 deletions(-)
+
+commit f5842694f4c73c8f8f743293aa97bde05ad48cbd
+Author: 17AlbinoZebras 
+Date:   Tue Dec 2 18:45:04 2025 -0500
+
+    feat: add entry to shopping list. each entry needs a name, quantity, and list to add to
+
+ lib/add-to-shopping-list/add-to-shopping-list.mjs |  65 ++++++++++++
+ lib/add-to-shopping-list/config.mjs               |   6 ++
+ lib/add-to-shopping-list/package-lock.json        | 122 ++++++++++++++++++++++
+ lib/add-to-shopping-list/package.json             |   8 ++
+ lib/shop-cdk2-stack.ts                            |   3 +
+ 5 files changed, 204 insertions(+)
+
+commit 11fdc7919908733338fb11aa308d184ab98dc21f
+Merge: f551ec1 5fbe201
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 2 18:19:26 2025 -0500
+
+    Merge pull request #13 from tdnguyen04/reupload-create-shopping-list
+    
+    feat: create new shopping list with given name
+
+commit f551ec1c0a28ea3859b4f46d16e4768884e2a7e1
+Merge: d90dbeb 8496bbd
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 2 14:39:48 2025 -0500
+
+    Merge pull request #14 from tdnguyen04/npm-recursive
+    
+    Npm recursive
+
+commit 8496bbd5fa59e43cc33598801c27947b31c24bc2
+Author: codeitfast 
+Date:   Tue Dec 2 14:35:35 2025 -0500
+
+    bug(lambda): add-chain patch
+
+ lib/add-chain/add-chain.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 32db787410f3015834688fcceed4b4b9622ba226
+Author: codeitfast 
+Date:   Tue Dec 2 13:30:14 2025 -0500
+
+    npm recursive added
+
+ package-lock.json | 232 +++++++++++++++++++++++++++++++++++++++++++++++++-----
+ package.json      |   3 +-
+ 2 files changed, 214 insertions(+), 21 deletions(-)
+
+commit 5fbe201207cbaae234de11e52cec4416d39f48c9
+Author: 17AlbinoZebras 
+Date:   Tue Dec 2 13:18:09 2025 -0500
+
+    feat: create new shopping list with given name
+
+ lib/create-shopping-list/config.mjs               |   6 ++
+ lib/create-shopping-list/create-shopping-list.mjs |  64 ++++++++++++
+ lib/create-shopping-list/package-lock.json        | 122 ++++++++++++++++++++++
+ lib/create-shopping-list/package.json             |   9 ++
+ lib/shop-cdk2-stack.ts                            |   9 ++
+ 5 files changed, 210 insertions(+)
+
+commit d90dbeb2658b6965b21d7dd5959c1e830b0b1df4
+Merge: 5dd0cde b936771
+Author: 17AlbinoZebras <67878178+17AlbinoZebras@users.noreply.github.com>
+Date:   Tue Dec 2 12:17:14 2025 -0500
+
+    Merge pull request #12 from tdnguyen04/revert-9-create-shopping-list
+    
+    Revert "Create shopping list"
+
+commit 5dd0cde2e66dfa1efba5ef225d9b00bca90b4056
+Merge: cd8c9ec 0ba37e5
+Author: bnbinder 
+Date:   Tue Dec 2 11:02:27 2025 -0500
+
+    Merge pull request #10 from tdnguyen04/remove-chain
+    
+    Remove chain
+
+commit b936771dde48ec4eee6e0a99158379e3552d0141
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Tue Dec 2 09:50:46 2025 -0500
+
+    Revert "Create shopping list"
+
+ lib/cdk.context.json                              |   6 -
+ lib/create-shopping-list/config.mjs               |   6 -
+ lib/create-shopping-list/create-shopping-list.mjs |  64 -----
+ lib/create-shopping-list/package-lock.json        | 122 ----------
+ lib/create-shopping-list/package.json             |   8 -
+ lib/shop-cdk-stack.ts                             | 284 ----------------------
+ lib/shop-cdk2-stack.ts                            |  11 -
+ 7 files changed, 501 deletions(-)
+
+commit 0ba37e5df979f75b631d525d947708b0190b2706
+Author: codeitfast 
+Date:   Mon Dec 1 18:47:59 2025 -0500
+
+    func(lambda): remove-chain
+
+ lib/remove-chain/package-lock.json | 98 +++++++++++++++++++++++++++++++++++++-
+ lib/remove-chain/package.json      |  2 +-
+ lib/remove-chain/remove-chain.mjs  |  4 +-
+ lib/shop-cdk2-stack.ts             |  3 ++
+ 4 files changed, 103 insertions(+), 4 deletions(-)
+
+commit cd8c9eceb66a07831f5153cf03c27041bd04958f
+Merge: b5094a4 f0f5fad
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Mon Dec 1 18:27:06 2025 -0500
+
+    Merge pull request #9 from tdnguyen04/create-shopping-list
+    
+    Create shopping list
+
+commit 2a013b1677023d56a9a26fa9b8b12c56581be6df
+Author: codeitfast 
+Date:   Mon Dec 1 18:26:20 2025 -0500
+
+    basic stub
+
+ lib/remove-chain/remove-chain.mjs | 32 +++++++++++++++++++++++---------
+ 1 file changed, 23 insertions(+), 9 deletions(-)
+
+commit f0f5fadb21dcd8972e883cdee638f4f79da489ce
+Author: 17AlbinoZebras 
+Date:   Mon Dec 1 18:25:45 2025 -0500
+
+    delete add-to-shopping-list that was included on accident
+
+ .../add-to-shopping-list/add-to-shopping-list.mjs  | 36 ----------------------
+ lib/shopping-list/add-to-shopping-list/config.mjs  |  6 ----
+ .../add-to-shopping-list/package-lock.json         | 12 --------
+ .../add-to-shopping-list/package.json              |  7 -----
+ 4 files changed, 61 deletions(-)
+
+commit 53e032c9cd827032201450bb71e28068b3b54480
+Author: codeitfast 
+Date:   Mon Dec 1 18:21:35 2025 -0500
+
+    remove stub added
+
+ lib/remove-chain/config.mjs        |  6 ++++++
+ lib/remove-chain/package-lock.json | 12 ++++++++++++
+ lib/remove-chain/package.json      |  7 +++++++
+ lib/remove-chain/remove-chain.mjs  | 21 +++++++++++++++++++++
+ 4 files changed, 46 insertions(+)
+
+commit 67456823370281f90b629a6c3ae2fdb1b4e2d6cb
+Merge: 26140f2 b5094a4
+Author: 17AlbinoZebras 
+Date:   Mon Dec 1 18:18:33 2025 -0500
+
+    Merge branch 'development' into create-shopping-list
+
+commit 26140f2ea55dc326e3ff613dbd2430c3d969baa0
+Author: 17AlbinoZebras 
+Date:   Mon Dec 1 14:33:28 2025 -0500
+
+    moved parent
+
+ lib/cdk.context.json                               |  6 ++++
+ .../create-shopping-list/config.mjs                |  0
+ .../create-shopping-list/create-shopping-list.mjs  | 11 ++++---
+ .../create-shopping-list/package-lock.json         |  0
+ .../create-shopping-list/package.json              |  0
+ lib/shop-cdk-stack.ts                              |  4 +--
+ .../add-to-shopping-list/add-to-shopping-list.mjs  | 36 ++++++++++++++++++++++
+ lib/shopping-list/add-to-shopping-list/config.mjs  |  6 ++++
+ .../add-to-shopping-list/package-lock.json         | 12 ++++++++
+ .../add-to-shopping-list/package.json              |  7 +++++
+ 10 files changed, 75 insertions(+), 7 deletions(-)
+
+commit b5094a494e9ed524e1e8582d52918691d09ef4e2
+Merge: 9f4ba59 777ebcc
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Dec 1 13:39:41 2025 -0500
+
+    Merge pull request #8 from tdnguyen04/refactor
+    
+    merge with development
+
+commit 97c91a7bf70eef408bb75ada0b0799d40479cbc8
+Author: 17AlbinoZebras 
+Date:   Mon Dec 1 13:35:08 2025 -0500
+
+    refactor: create new shopping list with given name
+
+ .../create-shopping-list/create-shopping-list.mjs  | 59 +++++++++++++++-------
+ 1 file changed, 42 insertions(+), 17 deletions(-)
+
+commit 777ebcc089d0781bc1f0939dcff1727e968eaae7
+Author: codeitfast 
+Date:   Mon Dec 1 13:30:09 2025 -0500
+
+    merge with development
+
+ lib/shop-cdk2-stack.ts | 389 ++++++++++++++++++++++---------------------------
+ 1 file changed, 178 insertions(+), 211 deletions(-)
+
+commit 9f4ba595720a9eb1cbc87b4d4253841e7cc1e8ba
+Author: bnbinder 
+Date:   Mon Dec 1 13:23:59 2025 -0500
+
+    Revert "refactor: addGetMethod and addPostMethod function"
+    
+    This reverts commit 0155f4a691ddabf29fe60669135a435ec3e18f69.
+
+ lib/shop-cdk2-stack.ts | 389 +++++++++++++++++++++++++++----------------------
+ 1 file changed, 211 insertions(+), 178 deletions(-)
+
+commit 0155f4a691ddabf29fe60669135a435ec3e18f69
+Author: codeitfast 
+Date:   Mon Dec 1 13:22:40 2025 -0500
+
+    refactor: addGetMethod and addPostMethod function
+
+ lib/shop-cdk2-stack.ts | 389 ++++++++++++++++++++++---------------------------
+ 1 file changed, 178 insertions(+), 211 deletions(-)
+
+commit 7bb5bca721e2b34097d36d3bae2c70ca8fa7cdae
+Merge: 641e76c 9a29089
+Author: codeitfast 
+Date:   Mon Nov 24 20:51:04 2025 -0500
+
+    Merge branch 'iteration-2-setup' into development
+
+commit 9a29089b60eeeec095e9b9700240d1c0b0f7d41a
+Author: tdnguyen04 
+Date:   Mon Nov 24 20:32:29 2025 -0500
+
+    fix to merge master
+
+ lib/add-chain/add-chain.mjs             |   2 +-
+ lib/add-store/add-store.mjs             |  37 ++++
+ lib/add-store/config.mjs                |   6 +
+ lib/add-store/package-lock.json         | 108 ++++++++++
+ lib/add-store/package.json              |   7 +
+ lib/admin-chains/admin-chains.mjs       |  22 ++
+ lib/admin-chains/config.mjs             |   6 +
+ lib/admin-chains/package-lock.json      | 108 ++++++++++
+ lib/admin-chains/package.json           |   9 +
+ lib/admin-stores/admin-stores.mjs       |  22 ++
+ lib/admin-stores/config.mjs             |   6 +
+ lib/admin-stores/package-lock.json      | 108 ++++++++++
+ lib/admin-stores/package.json           |   9 +
+ lib/default/config.mjs                  |   4 +-
+ lib/list-all-stores/config.mjs          |   6 +
+ lib/list-all-stores/list-all-stores.mjs |  24 +++
+ lib/list-all-stores/package-lock.json   | 108 ++++++++++
+ lib/list-all-stores/package.json        |   7 +
+ lib/list-chains/list-chains.mjs         |   2 +-
+ lib/list-stores/config.mjs              |   6 +
+ lib/list-stores/list-stores.mjs         |  25 +++
+ lib/list-stores/package-lock.json       | 108 ++++++++++
+ lib/list-stores/package.json            |   7 +
+ lib/shop-cdk2-stack.ts                  | 368 ++++++++++++++++++--------------
+ 24 files changed, 955 insertions(+), 160 deletions(-)
+
+commit 30b5f16fbd99dcc60c1f1ae5186efe10daff92ac
+Author: tdnguyen04 
+Date:   Mon Nov 24 20:29:29 2025 -0500
+
+    change config to iteration 2
+
+ bin/{shop-cdk.ts => shop-cdk2.ts}             | 4 ++--
+ cdk.json                                      | 2 +-
+ lib/add-chain/config.mjs                      | 4 ++--
+ lib/list-chains/config.mjs                    | 4 ++--
+ lib/{shop-cdk-stack.ts => shop-cdk2-stack.ts} | 4 ++--
+ package-lock.json                             | 6 +++---
+ package.json                                  | 4 ++--
+ test/{shop-cdk.test.ts => shop-cdk2.test.ts}  | 2 +-
+ 8 files changed, 15 insertions(+), 15 deletions(-)
+
+commit 01414bb308a5859f1177b223d8f5e48e511bfbd5
+Merge: 770cedf 641e76c
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Mon Nov 24 19:28:32 2025 -0500
+
+    Merge pull request #5 from tdnguyen04/development
+    
+    Development
+
+commit c5e93d71392845ffd32d36a82767cde0bb783542
+Merge: a512849 641e76c
+Author: 17AlbinoZebras 
+Date:   Sun Nov 23 12:02:22 2025 -0500
+
+    Merge branch 'development' into create-shopping-list
+
+commit a51284937bcd7d9684632ffd06bbaf558a0880d9
+Author: 17AlbinoZebras 
+Date:   Sun Nov 23 11:56:39 2025 -0500
+
+    refactor: create new shopping list with a given name
+
+ lib/shop-cdk-stack.ts                              |  25 +++++
+ .../create-shopping-list/create-shopping-list.mjs  |  10 +-
+ .../create-shopping-list/package-lock.json         | 116 ++++++++++++++++++++-
+ .../create-shopping-list/package.json              |   5 +-
+ 4 files changed, 147 insertions(+), 9 deletions(-)
+
+commit 641e76cb5d5e3759c2800dc2fc2fc1fee5f978fe
+Merge: eb9998c e811834
+Author: bnbinder 
+Date:   Sun Nov 23 11:39:16 2025 -0500
+
+    Merge branch 'adminChainSales' into development
+
+commit 1ef9fe2fd4df00d1dfb3d3fe9dd545cec8671438
+Author: 17AlbinoZebras 
+Date:   Sun Nov 23 11:10:17 2025 -0500
+
+    feat: create new shopping list with a given name
+
+ lib/shopping-list/create-shopping-list/config.mjs  |  6 ++++
+ .../create-shopping-list/create-shopping-list.mjs  | 36 ++++++++++++++++++++++
+ .../create-shopping-list/package-lock.json         | 12 ++++++++
+ .../create-shopping-list/package.json              |  7 +++++
+ 4 files changed, 61 insertions(+)
+
+commit e811834053e2ef953d8b95ae7ec4b7a321c50ec2
+Author: codeitfast 
+Date:   Sat Nov 22 19:29:50 2025 -0500
+
+    bug patch
+
+ lib/shop-cdk-stack.ts | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit 1225fab30ce56f0e020f9751832c1172e3e810b9
+Author: codeitfast 
+Date:   Sat Nov 22 19:26:48 2025 -0500
+
+    altered add-chain
+
+ lib/add-chain/add-chain.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 009548d7f897b1dcbea5f47c4ad90b1523022d60
+Author: bnbinder 
+Date:   Sat Nov 22 17:41:14 2025 -0500
+
+    update stack with admin stores and chains
+
+ lib/shop-cdk-stack.ts | 392 ++++++++++++++++++++++++++------------------------
+ 1 file changed, 206 insertions(+), 186 deletions(-)
+
+commit 8f9bc09db68c7343563feb437170831d0a51d91d
+Author: bnbinder 
+Date:   Sat Nov 22 17:19:22 2025 -0500
+
+    one instead of two lambda calls for admin
+
+ .../admin-chain-sales.mjs => admin-chains/admin-chains.mjs}             | 2 +-
+ lib/{admin-chain-sales => admin-chains}/config.mjs                      | 0
+ lib/{admin-chain-sales => admin-chains}/package-lock.json               | 0
+ lib/{admin-chain-sales => admin-chains}/package.json                    | 0
+ .../admin-store-sales.mjs => admin-stores/admin-stores.mjs}             | 2 +-
+ lib/{admin-store-sales => admin-stores}/config.mjs                      | 0
+ lib/{admin-store-sales => admin-stores}/package-lock.json               | 0
+ lib/{admin-store-sales => admin-stores}/package.json                    | 0
+ 8 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 2fc515f480ce77169b32590cf97fcef9fe7bf345
+Author: bnbinder 
+Date:   Sat Nov 22 17:14:13 2025 -0500
+
+    oops switch store and chains
+
+ lib/admin-chain-sales/admin-chain-sales.mjs | 2 +-
+ lib/admin-store-sales/admin-store-sales.mjs | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit eb9998ca1e52bf1cba4e923867e03a78bddbf2c4
+Merge: ed13bad 7245dc5
+Author: tdnguyen04 <107527017+tdnguyen04@users.noreply.github.com>
+Date:   Sat Nov 22 12:51:50 2025 -0500
+
+    Merge pull request #4 from tdnguyen04/add-store
+    
+    Add store. codeitfast has tested and merged locally.
+
+commit 7245dc57c3c76661f5b1827925ae1bfe80579a00
+Merge: 688c90a ed13bad
+Author: codeitfast 
+Date:   Sat Nov 22 12:48:42 2025 -0500
+
+    Merge branch 'development' into add-store
+
+commit ed13badd3fd20527cd7b53f74b5bd87296628fc6
+Merge: 99f7ed4 5db92a3
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Fri Nov 21 13:52:39 2025 -0500
+
+    Merge pull request #2 from tdnguyen04/list-stores
+    
+    List stores
+
+commit 5db92a3687e9073138ee74385aedb164ad70f5c2
+Author: codeitfast 
+Date:   Fri Nov 21 13:46:07 2025 -0500
+
+    camel case
+
+ lib/list-stores/list-stores.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 688c90a117993e30960220f5436f81c8f46d964e
+Author: codeitfast 
+Date:   Fri Nov 21 13:45:31 2025 -0500
+
+    camel case
+
+ lib/add-store/add-store.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 99f7ed43efc448e8d15f589af22990977fea6900
+Author: codeitfast 
+Date:   Fri Nov 21 13:30:16 2025 -0500
+
+    chain_sales added
+
+ lib/add-chain/add-chain.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0aecfab93ace3f780e55bf72e7335a7b4b696f51
+Author: codeitfast 
+Date:   Fri Nov 21 13:29:07 2025 -0500
+
+    delete admin_id
+
+ lib/add-chain/add-chain.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2fb6e60bec4769cd51909c1c7143125818ea11b9
+Author: codeitfast 
+Date:   Fri Nov 21 12:45:57 2025 -0500
+
+    add store function created. Returns list of all stores in the chain
+
+ lib/add-chain/add-chain.mjs     |   2 +-
+ lib/add-store/add-store.mjs     |  37 ++++++++++++++
+ lib/add-store/config.mjs        |   6 +++
+ lib/add-store/package-lock.json | 108 ++++++++++++++++++++++++++++++++++++++++
+ lib/add-store/package.json      |   7 +++
+ 5 files changed, 159 insertions(+), 1 deletion(-)
+
+commit a8fa03e12d9de9ce5da52dc85de6485b13606d29
+Author: codeitfast 
+Date:   Fri Nov 21 12:33:04 2025 -0500
+
+    save progress
+
+ lib/shop-cdk-stack.ts | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 2604b25ea464dff33bc63e63960d9d12687cb663
+Author: codeitfast 
+Date:   Fri Nov 21 12:30:25 2025 -0500
+
+    list-all-stores and list-stores based on chain_id successfully implemented
+
+ lib/list-all-stores/config.mjs          |   6 ++
+ lib/list-all-stores/list-all-stores.mjs |  24 +++++++
+ lib/list-all-stores/package-lock.json   | 108 ++++++++++++++++++++++++++++++++
+ lib/list-all-stores/package.json        |   7 +++
+ lib/list-stores/config.mjs              |   6 ++
+ lib/list-stores/list-stores.mjs         |  25 ++++++++
+ lib/list-stores/package-lock.json       | 108 ++++++++++++++++++++++++++++++++
+ lib/list-stores/package.json            |   7 +++
+ lib/shop-cdk-stack.ts                   |  23 +++++++
+ 9 files changed, 314 insertions(+)
+
+commit 80a2d42d404509de77388afe9ac84be6c5ba1642
+Author: bnbinder 
+Date:   Thu Nov 20 19:00:42 2025 -0500
+
+    make list chains return everything but chain_sales
+
+ lib/list-chains/list-chains.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 46496b86f57d315c69562e079372c5066ec4cbbf
+Author: bnbinder 
+Date:   Thu Nov 20 18:57:24 2025 -0500
+
+    chain and stores sales
+
+ lib/admin-chain-sales/admin-chain-sales.mjs |  22 ++++++
+ lib/admin-chain-sales/config.mjs            |   6 ++
+ lib/admin-chain-sales/package-lock.json     | 108 ++++++++++++++++++++++++++++
+ lib/admin-chain-sales/package.json          |   9 +++
+ lib/admin-store-sales/admin-store-sales.mjs |  22 ++++++
+ lib/admin-store-sales/config.mjs            |   6 ++
+ lib/admin-store-sales/package-lock.json     | 108 ++++++++++++++++++++++++++++
+ lib/admin-store-sales/package.json          |   9 +++
+ 8 files changed, 290 insertions(+)
+
+commit 770cedf4480979a825b127fea29f7d8ea6bf46c0
+Merge: bd4d9ef 9d2f91a
+Author: codeitfast <74981041+codeitfast@users.noreply.github.com>
+Date:   Wed Nov 19 13:44:44 2025 -0500
+
+    Merge pull request #1 from tdnguyen04/codeitfast
+    
+    codeitfast
+
+commit 9d2f91aecf080bf547f8da246fb25de2a4bdfc4f
+Author: codeitfast 
+Date:   Wed Nov 19 10:19:21 2025 -0500
+
+    final rename and permissions revoked add create chain lambda functions
+
+ lib/shop-cdk-stack.ts | 11 ++---------
+ 1 file changed, 2 insertions(+), 9 deletions(-)
+
+commit 18585a45db27bb1d38520ab7a34b0337e3e0398a
+Author: codeitfast 
+Date:   Wed Nov 19 10:16:45 2025 -0500
+
+    folder caleld add-chain bug patch
+
+ lib/{create-chain => add-chain}/add-chain.mjs     | 2 +-
+ lib/{create-chain => add-chain}/config.mjs        | 0
+ lib/{create-chain => add-chain}/package-lock.json | 0
+ lib/{create-chain => add-chain}/package.json      | 0
+ 4 files changed, 1 insertion(+), 1 deletion(-)
+
+commit 72921089a1dbde0a5adb30a9428a657b9a947a0d
+Author: codeitfast 
+Date:   Wed Nov 19 10:15:42 2025 -0500
+
+    renamed create-chain to add-chain
+
+ lib/create-chain/{create-chain.mjs => add-chain.mjs} | 0
+ lib/create-chain/package-lock.json                   | 4 ++--
+ lib/create-chain/package.json                        | 4 ++--
+ lib/shop-cdk-stack.ts                                | 4 ++--
+ 4 files changed, 6 insertions(+), 6 deletions(-)
+
+commit 39681ba61818e25d91b72e2b3ae0f102a41891bf
+Author: codeitfast 
+Date:   Wed Nov 19 07:40:59 2025 -0500
+
+    adding chains officially works!
+
+ lib/create-chain/create-chain.mjs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f82fe7d6f6ded86ad955adead85689ff0722914b
+Author: codeitfast 
+Date:   Wed Nov 19 07:33:42 2025 -0500
+
+    create-chain officially works
+
+ lib/create-chain/create-chain.mjs | 34 ++++++++++++++++++++++------------
+ lib/shop-cdk-stack.ts             |  7 +++++++
+ 2 files changed, 29 insertions(+), 12 deletions(-)
+
+commit 2eda3b019c3ee5a70069717f7d9dc3b4322b3d7a
+Author: codeitfast 
+Date:   Tue Nov 18 23:30:56 2025 -0500
+
+    create-chain
+
+ lib/create-chain/config.mjs        |   6 +++
+ lib/create-chain/create-chain.mjs  |  25 +++++++++
+ lib/create-chain/package-lock.json | 108 +++++++++++++++++++++++++++++++++++++
+ lib/create-chain/package.json      |   9 ++++
+ lib/shop-cdk-stack.ts              |  16 ++++--
+ package-lock.json                  |   7 ++-
+ package.json                       |   2 +-
+ 7 files changed, 168 insertions(+), 5 deletions(-)
+
+commit bd4d9efe3d11bbe5ed2f28e7a946ac73c182c983
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Tue Nov 18 19:48:21 2025 -0500
+
+    feat: change info to AWS team account and add a template function
+
+ bin/shop-cdk.ts                 |  2 +-
+ lib/default/config.mjs          |  6 ++++++
+ lib/list-chains/config.mjs      |  4 ++--
+ lib/list-chains/list-chains.mjs |  2 +-
+ lib/shop-cdk-stack.ts           | 44 ++++++++++++++++++++++++-----------------
+ 5 files changed, 36 insertions(+), 22 deletions(-)
+
+commit e7a52939951d53c792b55ea3a983f33eead241d8
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Tue Nov 18 13:21:12 2025 -0500
+
+    first commit
+
+ bin/{shopcompcdk.ts => shop-cdk.ts}            |    4 +-
+ cdk.context.json                               |    5 +
+ cdk.json                                       |    2 +-
+ lib/default/default.mjs                        |   12 +
+ lib/default/package-lock.json                  |   12 +
+ lib/default/package.json                       |    7 +
+ lib/list-chains/config.mjs                     |    6 +
+ lib/list-chains/list-chains.mjs                |   22 +
+ lib/list-chains/package-lock.json              |  108 +
+ lib/list-chains/package.json                   |    9 +
+ lib/shop-cdk-stack.ts                          |  185 +
+ lib/shopcompcdk-stack.ts                       |   16 -
+ package-lock.json                              | 4430 ++++++++++++++++++++++++
+ package.json                                   |    4 +-
+ test/{shopcompcdk.test.ts => shop-cdk.test.ts} |    6 +-
+ 15 files changed, 4804 insertions(+), 24 deletions(-)
+
+commit 26f6b3a1625157a898c0fbc13ccfa4b08ca5e61d
+Author: tdnguyen04-backend <tdnguyen04.backend@gmail.com>
+Date:   Tue Nov 18 09:12:35 2025 -0500
+
+    Initial commit
+
+ .gitignore               |   8 ++++
+ .npmignore               |   6 +++
+ README.md                |  14 +++++++
+ bin/shopcompcdk.ts       |  20 ++++++++++
+ cdk.json                 | 101 +++++++++++++++++++++++++++++++++++++++++++++++
+ jest.config.js           |   8 ++++
+ lib/shopcompcdk-stack.ts |  16 ++++++++
+ package.json             |  26 ++++++++++++
+ test/shopcompcdk.test.ts |  17 ++++++++
+ tsconfig.json            |  32 +++++++++++++++
+ 10 files changed, 248 insertions(+)
